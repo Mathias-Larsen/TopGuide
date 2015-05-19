@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="StarterApp">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-</head>
-<body>
 
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <meta name="viewport" content="initial-scale=1" />
+
+</head>
+<body layout="column" ng-controller="AppCtrl">
+
+    <md-toolbar layout="row">
+        <button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button menuBtn">
+            <span class="md-visually-hidden">Menu</span>
+        </button>
+        <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Hello World</h1>
+    </md-toolbar>
+    <div layout="row" flex>
+        <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+            fjksdfhjksfdks
+        </md-sidenav>
+
+
+        <div flex="20"></div>
+        <div flex="40">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </div>
+        <div flex="20"></div>
+
+
+        <!--<div layout="column" flex-off id="content">-->
+            <!--<md-content layout="column" flex class="md-padding">-->
+                <!--Hejsa-->
+            <!--</md-content>-->
+        <!--</div>-->
+        <!--<div layout="row">-->
+            <!--<div>i'm left</div>-->
+            <!--<div>i'm right</div>-->
+        <!--</div>-->
+    </div>
+
+
+    <!-- Angular dependencies -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
