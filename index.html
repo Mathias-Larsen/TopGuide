@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="styles.css">
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
     <meta name="viewport" content="initial-scale=1" />
 
 </head>
@@ -41,6 +41,37 @@
                 </section>
             </md-content>
 
+            <md-content>
+                <section layout="column">
+                    <md-input-container>
+                        <label>Awesome Name</label>
+                        <input ng-model="name" type="text">
+                    </md-input-container>
+                    <h3>Awesome name dispalys here [{{name}}]</h3>
+
+                </section>
+            </md-content>
+
+
+
+            <div layout="column" layout-fill style="padding-bottom: 32px;">
+                <md-whiteframe class="md-whiteframe-z1" layout layout-align="center center">
+                    <span>.md-whiteframe-z1</span>
+                </md-whiteframe>
+                <md-whiteframe class="md-whiteframe-z2" layout layout-align="center center">
+                    <span>.md-whiteframe-z2</span>
+                </md-whiteframe>
+                <md-whiteframe class="md-whiteframe-z3" layout layout-align="center center">
+                    <span>.md-whiteframe-z3</span>
+                </md-whiteframe>
+                <md-whiteframe class="md-whiteframe-z4" layout layout-align="center center">
+                    <span>.md-whiteframe-z4</span>
+                </md-whiteframe>
+                <md-whiteframe class="md-whiteframe-z5" layout layout-align="center center">
+                    <span>.md-whiteframe-z5</span>
+                </md-whiteframe>
+            </div>
+
         </div>
         <div flex="20"></div>
 
@@ -63,6 +94,6 @@
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
 
-    <script src="app.js"></script>
+    <script src="webapp/app.js"></script>
 </body>
 </html>

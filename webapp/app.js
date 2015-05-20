@@ -1,7 +1,6 @@
 var app = angular.module('StarterApp', ['ngMaterial']).config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryPalette('blue')
-
+        .primaryPalette('cyan')
         .accentPalette('red');
 
 });
