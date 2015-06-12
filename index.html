@@ -22,27 +22,30 @@
     <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
 
         <dl>
-
+            <dt class="md-button">Icons</dt>
+            <dt>Buttons</dt>
+            <dt>Input Fields</dt>
         </dl>
 
         <md-content>
             <md-list>
-
-                <a class="md-">Icons</a>
-
-
+                <a ui-sref="icons">
                 <md-list-item ng-click="focusSection()">
                     <h4>Icons</h4>
                 </md-list-item>
+                </a>
 
+                <a ui-sref="buttons">
                 <md-list-item ng-click="focusSection()">
                     <h4>Buttons</h4>
                 </md-list-item>
+                </a>
 
-                <md-list-item ng-click="focusSection()">
-                    <h4>Input Fields</h4>
-                </md-list-item>
-
+                <a ui-sref="inputfields">
+                    <md-list-item ng-click="focusSection()">
+                        <h4>Input Fields</h4>
+                    </md-list-item>
+                </a>
                 <md-list-item ng-click="focusSection()">
                     <h4>Some list item 4</h4>
                 </md-list-item>

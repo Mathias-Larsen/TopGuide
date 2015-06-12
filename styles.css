@@ -34,3 +34,8 @@ https://github.com/google/material-design-icons
     width: 100px;
     height: 100px;
 }
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
