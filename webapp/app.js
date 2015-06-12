@@ -1,7 +1,7 @@
 var app = angular.module('StarterApp', ['ngMaterial', 'ui.router']).config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('cyan')
-        .accentPalette('red');
+        .accentPalette('teal');
 
 });
 
