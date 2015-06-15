@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "angular-material": "~0.9.8",
-    "angular-ui-router": "~0.2.15"
+    "angular-route": "~1.4.0"
   }
 }
