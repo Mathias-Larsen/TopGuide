@@ -1,1 +1,232 @@
-<h1>awesome input fields</h1>
+<h1>Awesome input fields</h1>
+
+<h2>Privat</h2>
+<div layout="column">
+    <!--<md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">-->
+    <!--<md-input-container>-->
+    <!--<label>Title</label>-->
+    <!--<input ng-model="user.title">-->
+    <!--</md-input-container>-->
+    <!--<md-input-container>-->
+    <!--<label>Email</label>-->
+    <!--<input ng-model="user.email" type="email">-->
+    <!--</md-input-container>-->
+    <!--</md-content>-->
+    <md-content layout-padding>
+        <form name="userForm">
+            <!--<div layout layout-sm="column">-->
+            <!--&lt;!&ndash;<md-input-container style="width:80%">&ndash;&gt;-->
+            <!--&lt;!&ndash;<label>Company (Disabled)</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input ng-model="user.company" disabled>&ndash;&gt;-->
+            <!--&lt;!&ndash;</md-input-container>&ndash;&gt;-->
+            <!--<md-input-container flex>-->
+            <!--<label>Dato for skade</label>-->
+            <!--<input type="date" ng-model="user.submissionDate">-->
+            <!--</md-input-container>-->
+            <!--</div>-->
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Fornavn</label>
+                    <input ng-model="user.firstName">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Efternavn</label>
+                    <input ng-model="user.lastName">
+                </md-input-container>
+            </div>
+            <md-input-container flex>
+                <label>Adresse</label>
+                <input ng-model="user.address">
+            </md-input-container>
+            <!--<md-input-container md-no-float>-->
+            <!--<input ng-model="user.address2" placeholder="Evt. addresse 2">-->
+            <!--</md-input-container>-->
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>By</label>
+                    <input ng-model="user.city">
+                </md-input-container>
+                <!--<md-input-container flex>-->
+                <!--<label>State</label>-->
+                <!--<input ng-model="user.state">-->
+                <!--</md-input-container>-->
+                <md-input-container flex>
+                    <label>Postnummer</label>
+                    <input ng-model="user.postalCode">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Telefon</label>
+                    <input ng-model="user.phone">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Mobil</label>
+                    <input ng-model="user.mobile">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>E-mail</label>
+                    <input ng-model="user.mail">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <!--<md-input-container style="width:80%">-->
+                <!--<label>Company (Disabled)</label>-->
+                <!--<input ng-model="user.company" disabled>-->
+                <!--</md-input-container>-->
+                <md-input-container flex>
+                    <label>Dato for skade</label>
+                    <input type="date" ng-model="user.submissionDate">
+                </md-input-container>
+            </div>
+            <md-input-container flex>
+                <label>Beskrivelse af skade</label>
+                <textarea ng-model="user.biography" columns="1"></textarea>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>
+
+<h2>Erhverv</h2>
+<div>
+    <!--<md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">-->
+        <!--<md-input-container>-->
+            <!--<label>Title</label>-->
+            <!--<input ng-model="user.title">-->
+        <!--</md-input-container>-->
+        <!--<md-input-container>-->
+            <!--<label>Email</label>-->
+            <!--<input ng-model="user.email" type="email">-->
+        <!--</md-input-container>-->
+    <!--</md-content>-->
+    <md-content layout-padding>
+        <form name="userForm">
+            <div layout layout-sm="column">
+                <md-input-container style="width:80%">
+                    <label>Firma</label>
+                    <input ng-model="user.company">
+                </md-input-container>
+                <!--<md-input-container flex>-->
+                    <!--<label>Dato for skade</label>-->
+                    <!--<input type="date" ng-model="user.submissionDate">-->
+                <!--</md-input-container>-->
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Kontakt person</label>
+                    <input ng-model="user.name">
+                </md-input-container>
+                <!--<md-input-container flex>-->
+                    <!--<label>Last Name</label>-->
+                    <!--<input ng-model="theMax">-->
+                <!--</md-input-container>-->
+            </div>
+            <md-input-container flex>
+                <label>Adresse</label>
+                <input ng-model="user.address">
+            </md-input-container>
+            <!--<md-input-container md-no-float>-->
+                <!--<input ng-model="user.address2" placeholder="Address 2">-->
+            <!--</md-input-container>-->
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>By</label>
+                    <input ng-model="user.city">
+                </md-input-container>
+                <!--<md-input-container flex>-->
+                    <!--<label>State</label>-->
+                    <!--<input ng-model="user.state">-->
+                <!--</md-input-container>-->
+                <md-input-container flex>
+                    <label>Postnummer</label>
+                    <input ng-model="user.postalCode">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Telefon</label>
+                    <input ng-model="user.phone">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>E-mail</label>
+                    <input ng-model="user.mail">
+                </md-input-container>
+            </div>
+            <!--<div layout layout="column">-->
+            <md-input-container flex>
+                <label>Dato for skade</label>
+                <input type="date" ng-model="user.submissionDate">
+            </md-input-container>
+            <md-input-container flex>
+                <label>Beskrivelse af skade</label>
+                <textarea ng-model="user.biography" columns="1"></textarea>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>
+
+<h2>Landbrug</h2>
+
+<!--<div><md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">-->
+    <!--<md-input-container>-->
+        <!--<label>Title</label>-->
+        <!--<input ng-model="user.title">-->
+    <!--</md-input-container>-->
+    <!--<md-input-container>-->
+        <!--<label>Email</label>-->
+        <!--<input ng-model="user.email" type="email">-->
+    <!--</md-input-container>-->
+<!--</md-content>-->
+    <md-content layout-padding>
+        <form name="userForm">
+            <div layout layout-sm="column">
+                <md-input-container style="width:80%">
+                    <label>Firma</label>
+                    <input ng-model="user.company">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>Fornavn</label>
+                    <input ng-model="user.firstName">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Efternavn</label>
+                    <input ng-model="lastName">
+                </md-input-container>
+            </div>
+            <md-input-container flex>
+                <label>Adresse</label>
+                <input ng-model="user.address">
+            </md-input-container>
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>By</label>
+                    <input ng-model="user.city">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Postnummer</label>
+                    <input ng-model="user.postalCode">
+                </md-input-container>
+            </div>
+            <div layout layout="column">
+                <md-input-container flex>
+                    <label>Telefon</label>
+                    <input ng-model="user.phone">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>E-mail</label>
+                    <input ng-model="user.mail">
+                </md-input-container>
+            </div>
+            <md-input-container flex>
+                <label>Dato for skade</label>
+                <input type="date" ng-model="user.submissionDate">
+            </md-input-container>
+            <md-input-container flex>
+                <label>Beskrivelse af skade</label>
+                <textarea ng-model="user.biography" columns="1"></textarea>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>
