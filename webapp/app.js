@@ -40,5 +40,10 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
         $location.path('/' + siteId);
     }
 
+    $scope.title1 = 'Button';
+    $scope.title4 = 'Warn';
+    $scope.isDisabled = true;
+    $scope.googleUrl = 'http://google.com';
+
 
 }]);
