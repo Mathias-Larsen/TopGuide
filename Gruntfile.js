@@ -6,6 +6,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['connect:server']);
 
+
     grunt.initConfig({
         conf: {
             app_root: ''
