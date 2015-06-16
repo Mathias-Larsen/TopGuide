@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title><Checkbox/title>
+</head>
+<body>
+<div ng-controller="AppCtrl" class="md-padding">
+    <div layout="row">
+        <div flex="50" flex-md="100" layout="column">
+            <fieldset class="standard" flex>
+                <legend>Using <code>md-checkbox</code> with <code>ng-checked</code></legend>
+                <div layout="row" layout-wrap>
+                    <div flex="50" ng-repeat="item in items">
+                        <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                            {{ item }} <span ng-if="exists(item, selected)">selected</span>
+                        </md-checkbox>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+</body>
+</html>
