@@ -1,126 +1,113 @@
 <h1>Awesome input fields</h1>
 
-<h2>Privat</h2>
-<div layout="column">
+<p>Ideas for input fields</p>
 
-    <md-content layout-padding>
-        <form name="userForm">
-
-            <div layout layout-sm="column">
-                <md-input-container flex>
-                    <label>Fornavn</label>
-                    <input ng-model="user.firstName">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>Efternavn</label>
-                    <input ng-model="user.lastName">
-                </md-input-container>
-            </div>
-            <md-input-container flex>
-                <label>Adresse</label>
-                <input ng-model="user.address">
-            </md-input-container>
-
-            <div layout layout-sm="column">
-                <md-input-container flex>
-                    <label>By</label>
-                    <input ng-model="user.city">
-                </md-input-container>
-
-                <md-input-container flex>
-                    <label>Postnummer</label>
-                    <input ng-model="user.postalCode">
-                </md-input-container>
-            </div>
-            <div layout layout-sm="column">
-                <md-input-container flex>
-                    <label>Telefon</label>
-                    <input ng-model="user.phone">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>Mobil</label>
-                    <input ng-model="user.mobile">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>E-mail</label>
-                    <input ng-model="user.mail">
-                </md-input-container>
-            </div>
-            <div layout layout-sm="column">
-
-                <md-input-container flex>
-                    <label>Dato for skade</label>
-                    <input type="date" ng-model="user.submissionDate">
-                </md-input-container>
-            </div>
-            <md-input-container flex>
-                <label>Beskrivelse af skade</label>
-                <textarea ng-model="user.biography" columns="1"></textarea>
-            </md-input-container>
-        </form>
-    </md-content>
+<h3>Names</h3>
+<div layout layout-sm="column">
+    <md-input-container flex>
+        <i class="mdi mdi-account"></i>
+        <input ng-model="user.name">
+    </md-input-container>
 </div>
 
 <xmp>
-    <div layout="column">
-
-        <md-content layout-padding>
-            <form name="userForm">
-
-                <div layout layout-sm="column">
-                    <md-input-container flex>
-                        <label>Fornavn</label>
-                        <input ng-model="user.firstName">
-                    </md-input-container>
-                    <md-input-container flex>
-                        <label>Efternavn</label>
-                        <input ng-model="user.lastName">
-                    </md-input-container>
-                </div>
-                <md-input-container flex>
-                    <label>Adresse</label>
-                    <input ng-model="user.address">
-                </md-input-container>
-
-                <div layout layout-sm="column">
-                    <md-input-container flex>
-                        <label>By</label>
-                        <input ng-model="user.city">
-                    </md-input-container>
-
-                    <md-input-container flex>
-                        <label>Postnummer</label>
-                        <input ng-model="user.postalCode">
-                    </md-input-container>
-                </div>
-                <div layout layout-sm="column">
-                    <md-input-container flex>
-                        <label>Telefon</label>
-                        <input ng-model="user.phone">
-                    </md-input-container>
-                    <md-input-container flex>
-                        <label>Mobil</label>
-                        <input ng-model="user.mobile">
-                    </md-input-container>
-                    <md-input-container flex>
-                        <label>E-mail</label>
-                        <input ng-model="user.mail">
-                    </md-input-container>
-                </div>
-                <div layout layout-sm="column">
-
-                    <md-input-container flex>
-                        <label>Dato for skade</label>
-                        <input type="date" ng-model="user.submissionDate">
-                    </md-input-container>
-                </div>
-                <md-input-container flex>
-                    <label>Beskrivelse af skade</label>
-                    <textarea ng-model="user.biography" columns="1"></textarea>
-                </md-input-container>
-            </form>
-        </md-content>
+    <div layout layout-sm="column">
+        <md-input-container flex>
+            <i class="mdi mdi-account"></i>
+            <input ng-model="user.name">
+        </md-input-container>
     </div>
+</xmp>
+
+<h3>Address</h3>
+<div layout layout-sm="column">
+    <md-input-container flex>
+        <i class="mdi mdi-home"></i>
+        <input ng-model="user.address">
+    </md-input-container>
+    <md-input-container flex>
+        <i class="mdi mdi-map-marker"></i>
+        <input ng-model="user.city">
+    </md-input-container>
+    <md-input-container flex>
+        <i class="mdi mdi-city"></i>
+        <input ng-model="user.postalCode">
+    </md-input-container>
+</div>
+
+<xmp>
+    <div layout layout-sm="column">
+        <md-input-container flex>
+            <i class="mdi mdi-home"></i>
+            <input ng-model="user.address">
+        </md-input-container>
+        <md-input-container flex>
+            <i class="mdi mdi-map-marker"></i>
+            <input ng-model="user.city">
+        </md-input-container>
+        <md-input-container flex>
+            <i class="mdi mdi-city"></i>
+            <input ng-model="user.postalCode">
+        </md-input-container>
+    </div>
+</xmp>
+
+<h3>Kontakt</h3>
+<div layout layout-sm="column">
+    <md-input-container flex>
+        <i class="mdi mdi-phone"></i>
+        <input ng-model="user.phone">
+    </md-input-container>
+    <md-input-container flex>
+        <i class="mdi mdi-cellphone-android"></i>
+        <input ng-model="user.mobile">
+    </md-input-container>
+    <md-input-container flex>
+        <i class="mdi mdi-at"></i>
+        <input ng-model="user.mail">
+    </md-input-container>
+</div>
+
+<xmp>
+    <div layout layout-sm="column">
+        <md-input-container flex>
+            <i class="mdi mdi-phone"></i>
+            <input ng-model="user.phone">
+        </md-input-container>
+        <md-input-container flex>
+            <i class="mdi mdi-cellphone-android"></i>
+            <input ng-model="user.mobile">
+        </md-input-container>
+        <md-input-container flex>
+            <i class="mdi mdi-at"></i>
+            <input ng-model="user.mail">
+        </md-input-container>
+    </div>
+</xmp>
+
+<h3>Info om skade</h3>
+<div layout layout-sm="column">
+    <md-input-container flex>
+        <label>Dato for skade</label>
+        <input type="date" ng-model="user.submissionDate">
+    </md-input-container>
+</div>
+    <md-input-container flex>
+        <i class="mdi mdi-comment-plus-outline"></i>
+        <textarea ng-model="user.biography" columns="1"></textarea>
+    </md-input-container>
+
+<xmp>
+    <div layout layout-sm="column">
+        <md-input-container flex>
+            <label>Dato for skade</label>
+            <input type="date" ng-model="user.submissionDate">
+        </md-input-container>
+    </div>
+    <md-input-container flex>
+        <i class="mdi mdi-comment-plus-outline"></i>
+        <textarea ng-model="user.biography" columns="1"></textarea>
+    </md-input-container>
 </xmp>
 
 <h2>Erhverv</h2>
@@ -130,40 +117,48 @@
             <div layout layout-sm="column">
                 <md-input-container style="width:80%">
                     <label>Firma</label>
+                    <i class="mdi mdi-home-modern"></i>
                     <input ng-model="user.company">
                 </md-input-container>
 
             </div>
             <div layout layout-sm="column">
                 <md-input-container flex>
-                    <label>Kontakt person</label>
+                    <label>Kontaktperson</label>
+                    <i class="mdi mdi-account"></i>
                     <input ng-model="user.name">
                 </md-input-container>
 
             </div>
             <md-input-container flex>
                 <label>Adresse</label>
+                <i class="mdi mdi-home"></i>
                 <input ng-model="user.address">
             </md-input-container>
 
             <div layout layout-sm="column">
                 <md-input-container flex>
                     <label>By</label>
+                    <i class="mdi mdi-map-marker"></i>
                     <input ng-model="user.city">
                 </md-input-container>
 
                 <md-input-container flex>
                     <label>Postnummer</label>
+                    <i class="mdi mdi-city"></i>
                     <input ng-model="user.postalCode">
                 </md-input-container>
             </div>
             <div layout layout-sm="column">
                 <md-input-container flex>
                     <label>Telefon</label>
+                    <i class="mdi mdi-phone"></i>
                     <input ng-model="user.phone">
                 </md-input-container>
+
                 <md-input-container flex>
                     <label>E-mail</label>
+                    <i class="mdi mdi-at"></i>
                     <input ng-model="user.mail">
                 </md-input-container>
             </div>
@@ -174,178 +169,9 @@
             </md-input-container>
             <md-input-container flex>
                 <label>Beskrivelse af skade</label>
+                <i class="mdi mdi-comment-plus-outline"></i>
                 <textarea ng-model="user.biography" columns="1"></textarea>
             </md-input-container>
         </form>
     </md-content>
 </div>
-
-<xmp>
-    <div>
-        <md-content layout-padding>
-            <form name="userForm">
-                <div layout layout-sm="column">
-                    <md-input-container style="width:80%">
-                        <label>Firma</label>
-                        <input ng-model="user.company">
-                    </md-input-container>
-
-                </div>
-                <div layout layout-sm="column">
-                    <md-input-container flex>
-                        <label>Kontakt person</label>
-                        <input ng-model="user.name">
-                    </md-input-container>
-
-                </div>
-                <md-input-container flex>
-                    <label>Adresse</label>
-                    <input ng-model="user.address">
-                </md-input-container>
-
-                <div layout layout-sm="column">
-                    <md-input-container flex>
-                        <label>By</label>
-                        <input ng-model="user.city">
-                    </md-input-container>
-
-                    <md-input-container flex>
-                        <label>Postnummer</label>
-                        <input ng-model="user.postalCode">
-                    </md-input-container>
-                </div>
-                <div layout layout-sm="column">
-                    <md-input-container flex>
-                        <label>Telefon</label>
-                        <input ng-model="user.phone">
-                    </md-input-container>
-                    <md-input-container flex>
-                        <label>E-mail</label>
-                        <input ng-model="user.mail">
-                    </md-input-container>
-                </div>
-
-                <md-input-container flex>
-                    <label>Dato for skade</label>
-                    <input type="date" ng-model="user.submissionDate">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>Beskrivelse af skade</label>
-                    <textarea ng-model="user.biography" columns="1"></textarea>
-                </md-input-container>
-            </form>
-        </md-content>
-    </div>
-</xmp>
-
-<h2>Landbrug</h2>
-
-<md-content layout-padding>
-    <form name="userForm">
-        <div layout layout-sm="column">
-            <md-input-container style="width:80%">
-                <label>Firma</label>
-                <input ng-model="user.company">
-            </md-input-container>
-        </div>
-        <div layout layout-sm="column">
-            <md-input-container flex>
-                <label>Fornavn</label>
-                <input ng-model="user.firstName">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Efternavn</label>
-                <input ng-model="lastName">
-            </md-input-container>
-        </div>
-        <md-input-container flex>
-            <label>Adresse</label>
-            <input ng-model="user.address">
-        </md-input-container>
-        <div layout layout-sm="column">
-            <md-input-container flex>
-                <label>By</label>
-                <input ng-model="user.city">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Postnummer</label>
-                <input ng-model="user.postalCode">
-            </md-input-container>
-        </div>
-        <div layout layout="column">
-            <md-input-container flex>
-                <label>Telefon</label>
-                <input ng-model="user.phone">
-            </md-input-container>
-            <md-input-container flex>
-                <label>E-mail</label>
-                <input ng-model="user.mail">
-            </md-input-container>
-        </div>
-        <md-input-container flex>
-            <label>Dato for skade</label>
-            <input type="date" ng-model="user.submissionDate">
-        </md-input-container>
-        <md-input-container flex>
-            <label>Beskrivelse af skade</label>
-            <textarea ng-model="user.biography" columns="1"></textarea>
-        </md-input-container>
-    </form>
-</md-content>
-</div>
-
-<xmp>
-    <md-content layout-padding>
-        <form name="userForm">
-            <div layout layout-sm="column">
-                <md-input-container style="width:80%">
-                    <label>Firma</label>
-                    <input ng-model="user.company">
-                </md-input-container>
-            </div>
-            <div layout layout-sm="column">
-                <md-input-container flex>
-                    <label>Fornavn</label>
-                    <input ng-model="user.firstName">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>Efternavn</label>
-                    <input ng-model="lastName">
-                </md-input-container>
-            </div>
-            <md-input-container flex>
-                <label>Adresse</label>
-                <input ng-model="user.address">
-            </md-input-container>
-            <div layout layout-sm="column">
-                <md-input-container flex>
-                    <label>By</label>
-                    <input ng-model="user.city">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>Postnummer</label>
-                    <input ng-model="user.postalCode">
-                </md-input-container>
-            </div>
-            <div layout layout="column">
-                <md-input-container flex>
-                    <label>Telefon</label>
-                    <input ng-model="user.phone">
-                </md-input-container>
-                <md-input-container flex>
-                    <label>E-mail</label>
-                    <input ng-model="user.mail">
-                </md-input-container>
-            </div>
-            <md-input-container flex>
-                <label>Dato for skade</label>
-                <input type="date" ng-model="user.submissionDate">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Beskrivelse af skade</label>
-                <textarea ng-model="user.biography" columns="1"></textarea>
-            </md-input-container>
-        </form>
-    </md-content>
-    </div>
-</xmp>
