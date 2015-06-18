@@ -15,11 +15,29 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/icons' , {
             templateUrl: 'views/icons.html'
         })
-        .when('/buttons' , {
-            templateUrl: 'views/buttons.html'
-        })
+        //.when('/buttons' , {
+        //    templateUrl: 'views/buttons.html'
+        //})
         .when('/inputfields' , {
             templateUrl: 'views/inputfields.html'
+        })
+        .when('/progress' , {
+            templateUrl: 'views/progress.html'
+        })
+        .when('/Toolbar' , {
+            templateUrl: 'views/Toolbar.html'
+        })
+        .when('/links' , {
+            templateUrl: 'views/links.html'
+        })
+        .when('/checkbox' , {
+            templateUrl: 'views/checkbox.html'
+        })
+        .when('/colors' , {
+            templateUrl: 'views/colors.html'
+        })
+        .when('/dropdown' , {
+            templateUrl: 'views/dropdown.html'
         });
 
     $locationProvider.html5Mode({
