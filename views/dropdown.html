@@ -1,0 +1,22 @@
+<h1>Dropdown menu</h1>
+
+<div ng-controller="AppCtrl" layout="column" layout-align="left" style="min-height: 300px;">
+    <form name="myForm">
+        <md-input-container>
+            <md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
+                <md-option value="1">One</md-option>
+                <md-option value="2">Two</md-option>
+                <md-option value="3">Three</md-option>
+                <md-option value="4">Four</md-option>
+                <md-option value="5">Five</md-option>
+            </md-select>
+            <div class="errors" ng-messages="myForm.myModel.$error" ng-if="myForm.$dirty">
+                <div ng-message="required">Required</div>
+            </div>
+        </md-input-container>
+        <div layout="row">
+            <md-button ng-click="clearValue()" ng-disabled="!myModel" style="margin-right: 20px;">Fortryd</md-button>
+            <md-button ng-click="save()" ng-disabled="myForm.$invalid" class="md-primary" layout layout-align="center end">Gem</md-button>
+        </div>
+    </form>
+</div>
