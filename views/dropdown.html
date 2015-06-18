@@ -14,9 +14,17 @@
                 <div ng-message="required">Required</div>
             </div>
         </md-input-container>
-        <div layout="row">
-            <md-button ng-click="clearValue()" ng-disabled="!myModel" style="margin-right: 20px;">Fortryd</md-button>
-            <md-button ng-click="save()" ng-disabled="myForm.$invalid" class="md-primary" layout layout-align="center end">Gem</md-button>
+        <!--<div layout="row">-->
+            <!--<md-button ng-click="clearValue()" ng-disabled="!myModel" style="margin-right: 20px;">Fortryd</md-button>-->
+            <!--<md-button ng-click="save()" ng-disabled="myForm.$invalid" class="md-primary" layout layout-align="center end">Gem</md-button>-->
+        <!--</div>-->
+        <div ng-controller="AppCtrl">
+            <md-content>
+                <section layout="row" layout-sm="column" layout-align="center center">
+                    <md-button class="md-raised">Fortryd</md-button>
+                    <md-button class="md-raised">Gem</md-button>
+                </section>
+            </md-content>
         </div>
     </form>
 </div>
