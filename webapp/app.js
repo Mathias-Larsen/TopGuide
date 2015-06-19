@@ -38,6 +38,9 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/dropdown' , {
             templateUrl: 'views/dropdown.html'
+        })
+        .when('/tooltip' , {
+            templateUrl: 'views/tooltip.html'
         });
 
     $locationProvider.html5Mode({
