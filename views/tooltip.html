@@ -1,28 +1,38 @@
 <div layout="row" layout-margin>
     <div flex flex-order="1">
         <h1>Tooltip</h1>
-        <!--<div ng-controller="AppCtrl">-->
-        <!--<md-content layout-padding>-->
+        <div ng-controller="AppCtrl">
+            <!--<md-content layout-padding>-->
 
-        <!--<md-button class="md-fab md-fab-top-left left" aria-label="Insert Drive">-->
-        <!--<md-icon md-svg-src="img/icons/ic_insert_drive_file_24px.svg" style="width: 24px; height: 24px;"></md-icon>-->
-        <!--<md-tooltip md-visible="demo.showTooltip">-->
-        <!--Insert Drive-->
-        <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <md-button class="md-fab md-fab-top-left" aria-label="Phone">
-            <i class="mdi mdi-phone"></i>
-            <md-tooltip>
-                Add phonenumber
-            </md-tooltip>
-        </md-button>
+            <!--<md-button class="md-fab md-fab-top-left left" aria-label="Insert Drive">-->
+            <!--<md-icon md-svg-src="img/icons/ic_insert_drive_file_24px.svg" style="width: 24px; height: 24px;"></md-icon>-->
+            <!--<md-tooltip md-visible="demo.showTooltip">-->
+            <!--Insert Drive-->
+            <!--</md-tooltip>-->
+            <!--</md-button>-->
 
-        <!--<md-checkbox ng-model="demo.showTooltip">-->
-        <!--Insert Drive-->
-        <!--</md-checkbox>-->
-        <!--</md-content>-->
-    </div>
-    <div>
-        <p>Use tooltip, to icons without text.</p>
+            <md-button class="md-fab md-left" aria-label="Phone">
+                <i class="mdi mdi-phone"></i>
+                <md-tooltip>
+                    Add phonenumber
+                </md-tooltip>
+            </md-button>
+
+            <!--<md-checkbox ng-model="demo.showTooltip">-->
+            <!--Insert Drive-->
+            <!--</md-checkbox>-->
+            <!--</md-content>-->
+
+            <md-button class="md-fab md-left" aria-label="Client address">
+                <i class="mdi mdi-map-marker"></i>
+                <md-tooltip>
+                    Client address
+                </md-tooltip>
+            </md-button>
+        </div>
+        <div>
+            <p>Use tooltip, to buttons with icons without text.</p>
+        </div>
+
     </div>
 </div>

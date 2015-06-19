@@ -2,7 +2,7 @@
 
 <p>Ideas for input fields</p>
 
-<h3>Names</h3>
+<h3>Forslag 1 - Kun ikoner</h3>
 <div layout layout-sm="column">
     <md-input-container flex>
         <i class="mdi mdi-account"></i>
@@ -10,16 +10,6 @@
     </md-input-container>
 </div>
 
-<xmp>
-    <div layout layout-sm="column">
-        <md-input-container flex>
-            <i class="mdi mdi-account"></i>
-            <input ng-model="user.name">
-        </md-input-container>
-    </div>
-</xmp>
-
-<h3>Address</h3>
 <div layout layout-sm="column">
     <md-input-container flex>
         <i class="mdi mdi-home"></i>
@@ -35,24 +25,6 @@
     </md-input-container>
 </div>
 
-<xmp>
-    <div layout layout-sm="column">
-        <md-input-container flex>
-            <i class="mdi mdi-home"></i>
-            <input ng-model="user.address">
-        </md-input-container>
-        <md-input-container flex>
-            <i class="mdi mdi-map-marker"></i>
-            <input ng-model="user.city">
-        </md-input-container>
-        <md-input-container flex>
-            <i class="mdi mdi-city"></i>
-            <input ng-model="user.postalCode">
-        </md-input-container>
-    </div>
-</xmp>
-
-<h3>Kontakt</h3>
 <div layout layout-sm="column">
     <md-input-container flex>
         <i class="mdi mdi-phone"></i>
@@ -68,49 +40,186 @@
     </md-input-container>
 </div>
 
-<xmp>
-    <div layout layout-sm="column">
-        <md-input-container flex>
-            <i class="mdi mdi-phone"></i>
-            <input ng-model="user.phone">
-        </md-input-container>
-        <md-input-container flex>
-            <i class="mdi mdi-cellphone-android"></i>
-            <input ng-model="user.mobile">
-        </md-input-container>
-        <md-input-container flex>
-            <i class="mdi mdi-at"></i>
-            <input ng-model="user.mail">
-        </md-input-container>
-    </div>
-</xmp>
-
-<h3>Info om skade</h3>
 <div layout layout-sm="column">
-    <md-input-container flex>
+    <md-input-container>
         <label>Dato for skade</label>
         <input type="date" ng-model="user.submissionDate">
     </md-input-container>
 </div>
-    <md-input-container flex>
-        <i class="mdi mdi-comment-plus-outline"></i>
-        <textarea ng-model="user.biography" columns="1"></textarea>
+<md-input-container flex>
+    <i class="mdi mdi-comment-plus-outline"></i>
+    <textarea ng-model="user.biography" columns="1"></textarea>
+</md-input-container>
+
+<h3>Forslag 2 - Ikoner med tooltip</h3>
+<div layout layout-sm="column">
+    <md-input-container>
+        <i class="mdi mdi-account"></i>
+        <md-tooltip flex>
+            Kundens navn
+        </md-tooltip>
+        <input ng-model="user.name">
+    </md-input-container>
+</div>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <i class="mdi mdi-home"></i>
+        <md-tooltip>
+            Vejnavn
+        </md-tooltip>
+        <input ng-model="user.address">
+    </md-input-container>
+    <md-input-container>
+        <i class="mdi mdi-map-marker"></i>
+        <md-tooltip>
+            By
+        </md-tooltip>
+        <input ng-model="user.city">
+    </md-input-container>
+    <md-input-container>
+        <i class="mdi mdi-city"></i>
+        <md-tooltip>
+            Postnummer
+        </md-tooltip>
+        <input ng-model="user.postalCode">
+    </md-input-container>
+</div>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <i class="mdi mdi-phone"></i>
+        <md-tooltip>
+            Telefonnummer
+        </md-tooltip>
+        <input ng-model="user.phone">
+    </md-input-container>
+    <md-input-container>
+        <i class="mdi mdi-cellphone-android"></i>
+        <md-tooltip>
+            Mobilnummer
+        </md-tooltip>
+        <input ng-model="user.mobile">
+    </md-input-container>
+    <md-input-container>
+        <i class="mdi mdi-at"></i>
+        <md-tooltip>
+            E-mail
+        </md-tooltip>
+        <input ng-model="user.mail">
+    </md-input-container>
+</div>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <label>Dato for skade</label>
+        <input type="date" ng-model="user.submissionDate">
+    </md-input-container>
+</div>
+<md-input-container>
+    <i class="mdi mdi-comment-plus-outline"></i>
+    <md-tooltip>
+        Beskrivelse af skade
+    </md-tooltip>
+    <textarea ng-model="user.biography" columns="1"></textarea>
+</md-input-container>
+
+<h2>Forslag 3 - Ikoner som buttons med tooltip</h2>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <md-button class="md-fab" aria-label="name">
+            <i class="mdi mdi-account"></i>
+            <md-tooltip>
+                Kunde navn
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.name">
+    </md-input-container>
+</div>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <md-button class="md-fab" aria-label="home">
+            <i class="mdi mdi-home"></i>
+            <md-tooltip>
+                Vejnavn
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.home">
     </md-input-container>
 
-<xmp>
-    <div layout layout-sm="column">
-        <md-input-container flex>
-            <label>Dato for skade</label>
-            <input type="date" ng-model="user.submissionDate">
-        </md-input-container>
-    </div>
-    <md-input-container flex>
-        <i class="mdi mdi-comment-plus-outline"></i>
-        <textarea ng-model="user.biography" columns="1"></textarea>
+    <md-input-container>
+        <md-button class="md-fab" aria-label="city">
+            <i class="mdi mdi-map-marker"></i>
+            <md-tooltip>
+                By
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.city">
     </md-input-container>
-</xmp>
 
-<h2>Erhverv</h2>
+    <md-input-container>
+        <md-button class="md-fab" aria-label="postalCode">
+            <i class="mdi mdi-city"></i>
+            <md-tooltip>
+                Postnummer
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.postalCode">
+    </md-input-container>
+</div>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <md-button class="md-fab" aria-label="phone">
+            <i class="mdi mdi-phone"></i>
+            <md-tooltip>
+                Telefonnummer
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.phone">
+    </md-input-container>
+
+    <md-input-container>
+        <md-button class="md-fab" aria-label="cellphone">
+            <i class="mdi mdi-cellphone-android"></i>
+            <md-tooltip>
+                Mobilnummmer
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.mobile">
+    </md-input-container>
+
+    <md-input-container>
+        <md-button class="md-fab" aria-label="mail">
+            <i class="mdi mdi-at"></i>
+            <md-tooltip>
+                E-mail
+            </md-tooltip>
+        </md-button>
+        <input ng-model="user.mail">
+    </md-input-container>
+</div>
+
+<div layout layout-sm="column">
+    <md-input-container>
+        <label>Dato for skade</label>
+        <input type="date" ng-model="user.submissionDate">
+    </md-input-container>
+</div>
+
+<md-input-container>
+    <md-button class="md-fab" aria-label="comment">
+        <i class="mdi mdi-comment-plus-outline"></i>
+        <md-tooltip>
+            Beskrivelse af skade
+        </md-tooltip>
+    </md-button>
+    <textarea ng-model="user.biography" columns="1"></textarea>
+</md-input-container>
+
+<h2>Forslag 4 - Ikoner og tekst</h2>
 <div>
     <md-content layout-padding>
         <form name="userForm">
