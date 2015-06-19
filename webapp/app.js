@@ -15,9 +15,9 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/icons' , {
             templateUrl: 'views/icons.html'
         })
-        //.when('/buttons' , {
-        //    templateUrl: 'views/buttons.html'
-        //})
+        .when('/buttons' , {
+            templateUrl: 'views/buttons.html'
+        })
         .when('/inputfields' , {
             templateUrl: 'views/inputfields.html'
         })
