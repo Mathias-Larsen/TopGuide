@@ -1,46 +1,44 @@
-<h1>Awesome tooltips</h1>
+<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+    <h1>Awesome tooltips</h1>
 
-<div layout="row" layout-margin>
-    <div flex flex-order="1">
-        <h1>Tooltip</h1>
-        <div ng-controller="AppCtrl">
+    <div>
+        <p>Use tooltip, to buttons with icons without text.</p>
+    </div>
 
+    <div ng-controller="AppCtrl">
+
+        <md-button class="md-icon-button md-primary md-hue-5" aria-label="Phone">
+            <i class="mdi mdi-phone" style="font-size: 45px;"></i>
+            <md-tooltip>
+                Telefonnummer
+            </md-tooltip>
+        </md-button>
+
+        <xmp>
             <md-button class="md-icon-button md-primary md-hue-5" aria-label="Phone">
                 <i class="mdi mdi-phone" style="font-size: 45px;"></i>
                 <md-tooltip>
                     Telefonnummer
                 </md-tooltip>
             </md-button>
-
-            <xmp>
-                <md-button class="md-icon-button md-primary md-hue-5" aria-label="Phone">
-                    <i class="mdi mdi-phone" style="font-size: 45px;"></i>
-                    <md-tooltip>
-                        Telefonnummer
-                    </md-tooltip>
-                </md-button>
-            </xmp>
+        </xmp>
 
 
+        <md-button class="md-icon-button md-primary md-hue-5" aria-label="Client address">
+            <i class="mdi mdi-map-marker" style="font-size: 45px;"></i>
+            <md-tooltip>
+                By
+            </md-tooltip>
+        </md-button>
+
+        <xmp>
             <md-button class="md-icon-button md-primary md-hue-5" aria-label="Client address">
                 <i class="mdi mdi-map-marker" style="font-size: 45px;"></i>
                 <md-tooltip>
                     By
                 </md-tooltip>
             </md-button>
-
-            <xmp>
-                <md-button class="md-icon-button md-primary md-hue-5" aria-label="Client address">
-                    <i class="mdi mdi-map-marker" style="font-size: 45px;"></i>
-                    <md-tooltip>
-                        By
-                    </md-tooltip>
-                </md-button>
-            </xmp>
-        </div>
-        <div>
-            <p>Use tooltip, to buttons with icons without text.</p>
-        </div>
-
+        </xmp>
     </div>
+
 </div>
