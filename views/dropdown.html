@@ -1,6 +1,7 @@
-<h1>Awesome dropdown menu</h1>
+<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+    <h1>Awesome dropdown menu</h1>
 
-<div ng-controller="AppCtrl" layout="column" layout-align="left" style="min-height: 300px;">
+    <!--<div ng-controller="AppCtrl" layout="column" layout-align="left" style="min-height: 300px;">-->
     <form name="myForm">
         <md-input-container>
             <md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
@@ -11,12 +12,12 @@
                 <md-option value="5">Five</md-option>
             </md-select>
             <!--<div class="errors" ng-messages="myForm.myModel.$error" ng-if="myForm.$dirty">-->
-                <!--<div ng-message="required">Required</div>-->
+            <!--<div ng-message="required">Required</div>-->
             <!--</div>-->
         </md-input-container>
         <!--<div layout="row">-->
-            <!--<md-button ng-click="clearValue()" ng-disabled="!myModel" style="margin-right: 20px;">Fortryd</md-button>-->
-            <!--<md-button ng-click="save()" ng-disabled="myForm.$invalid" class="md-primary" layout layout-align="center end">Gem</md-button>-->
+        <!--<md-button ng-click="clearValue()" ng-disabled="!myModel" style="margin-right: 20px;">Fortryd</md-button>-->
+        <!--<md-button ng-click="save()" ng-disabled="myForm.$invalid" class="md-primary" layout layout-align="center end">Gem</md-button>-->
         <!--</div>-->
         <div ng-controller="AppCtrl">
             <md-content>
@@ -30,7 +31,7 @@
 </div>
 
 <xmp>
-    <div ng-controller="AppCtrl" layout="column" layout-align="left" style="min-height: 300px;">
+    <div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
         <form name="myForm">
             <md-input-container>
                 <md-select name="myModel" placeholder="Pick" ng-model="myModel" required>

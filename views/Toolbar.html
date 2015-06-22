@@ -1,37 +1,10 @@
-<h1>Awesome toolbar with buttons</h1>
+<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+    <h1>Awesome toolbar with buttons</h1>
 
-<div ng-controller="AppCtrl">
-    <md-content>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <h2>
-                    <span>Toolbar with Icon Buttons</span>
-                </h2>
-                <span flex></span>
-                <md-button class="md-icon-button">
-                    <i class="mdi mdi-help" style="font-size: 20px;"></i>
-                </md-button>
-
-                <md-button class="md-icon-button">
-                    <i class="mdi mdi-dots-vertical" style="font-size: 20px;"></i>
-                </md-button>
-
-                <md-button class="md-icon-button">
-                    <i class="mdi mdi-settings" style="font-size: 20px;"></i>
-                </md-button>
-            </div>
-        </md-toolbar>
-    </md-content>
-</div>
-
-<xmp>
     <div ng-controller="AppCtrl">
         <md-content>
             <md-toolbar>
                 <div class="md-toolbar-tools">
-                    <md-button class="md-icon-button">
-                        <i class="mdi mdi-settings" style="font-size: 20px;"></i>
-                    </md-button>
                     <h2>
                         <span>Toolbar with Icon Buttons</span>
                     </h2>
@@ -43,8 +16,37 @@
                     <md-button class="md-icon-button">
                         <i class="mdi mdi-dots-vertical" style="font-size: 20px;"></i>
                     </md-button>
+
+                    <md-button class="md-icon-button">
+                        <i class="mdi mdi-settings" style="font-size: 20px;"></i>
+                    </md-button>
                 </div>
             </md-toolbar>
         </md-content>
     </div>
-</xmp>
+
+    <xmp>
+        <div ng-controller="AppCtrl">
+            <md-content>
+                <md-toolbar>
+                    <div class="md-toolbar-tools">
+                        <md-button class="md-icon-button">
+                            <i class="mdi mdi-settings" style="font-size: 20px;"></i>
+                        </md-button>
+                        <h2>
+                            <span>Toolbar with Icon Buttons</span>
+                        </h2>
+                        <span flex></span>
+                        <md-button class="md-icon-button">
+                            <i class="mdi mdi-help" style="font-size: 20px;"></i>
+                        </md-button>
+
+                        <md-button class="md-icon-button">
+                            <i class="mdi mdi-dots-vertical" style="font-size: 20px;"></i>
+                        </md-button>
+                    </div>
+                </md-toolbar>
+            </md-content>
+        </div>
+    </xmp>
+</div>

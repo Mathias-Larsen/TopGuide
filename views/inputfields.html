@@ -1,211 +1,213 @@
-<h1>Awesome input fields</h1>
+<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+    <h1>Awesome input fields</h1>
 
-<p>How to use input fields...</p>
+    <p>How to use input fields...</p>
 
-<!--<h3>Idea 1 - Only icons</h3>-->
-<!--<div layout layout-sm="column">-->
+    <!--<h3>Idea 1 - Only icons</h3>-->
+    <!--<div layout layout-sm="column">-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-account"></i>-->
-        <!--<input ng-model="user.name">-->
+    <!--<i class="mdi mdi-account"></i>-->
+    <!--<input ng-model="user.name">-->
     <!--</md-input-container>-->
-<!--</div>-->
+    <!--</div>-->
 
-<!--<div layout layout-sm="column">-->
+    <!--<div layout layout-sm="column">-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-home"></i>-->
-        <!--<input ng-model="user.address">-->
+    <!--<i class="mdi mdi-home"></i>-->
+    <!--<input ng-model="user.address">-->
     <!--</md-input-container>-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-map-marker"></i>-->
-        <!--<input ng-model="user.city">-->
+    <!--<i class="mdi mdi-map-marker"></i>-->
+    <!--<input ng-model="user.city">-->
     <!--</md-input-container>-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-city"></i>-->
-        <!--<input ng-model="user.postalCode">-->
+    <!--<i class="mdi mdi-city"></i>-->
+    <!--<input ng-model="user.postalCode">-->
     <!--</md-input-container>-->
-<!--</div>-->
+    <!--</div>-->
 
-<!--<div layout layout-sm="column">-->
+    <!--<div layout layout-sm="column">-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-phone"></i>-->
-        <!--<input ng-model="user.phone">-->
+    <!--<i class="mdi mdi-phone"></i>-->
+    <!--<input ng-model="user.phone">-->
     <!--</md-input-container>-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-cellphone-android"></i>-->
-        <!--<input ng-model="user.mobile">-->
+    <!--<i class="mdi mdi-cellphone-android"></i>-->
+    <!--<input ng-model="user.mobile">-->
     <!--</md-input-container>-->
     <!--<md-input-container flex>-->
-        <!--<i class="mdi mdi-at"></i>-->
-        <!--<input ng-model="user.mail">-->
+    <!--<i class="mdi mdi-at"></i>-->
+    <!--<input ng-model="user.mail">-->
     <!--</md-input-container>-->
-<!--</div>-->
+    <!--</div>-->
 
-<!--<div layout layout-sm="column">-->
+    <!--<div layout layout-sm="column">-->
     <!--<md-input-container>-->
-        <!--<label>Dato for skade</label>-->
-        <!--<input type="date" ng-model="user.submissionDate">-->
+    <!--<label>Dato for skade</label>-->
+    <!--<input type="date" ng-model="user.submissionDate">-->
     <!--</md-input-container>-->
-<!--</div>-->
-<!--<md-input-container flex>-->
+    <!--</div>-->
+    <!--<md-input-container flex>-->
     <!--<i class="mdi mdi-comment-plus-outline"></i>-->
     <!--<textarea ng-model="user.biography" columns="1"></textarea>-->
-<!--</md-input-container>-->
-
-<!--<h3>Idea 2 - Icons on buttons with tooltip</h3>-->
-
-<!--<div layout layout-sm="column">-->
-    <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="name">-->
-            <!--<i class="mdi mdi-account" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--Kunde navn-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.name">-->
-    <!--</md-input-container>-->
-<!--</div>-->
-
-<!--<div layout layout-sm="column">-->
-    <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="home">-->
-            <!--<i class="mdi mdi-home" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--Vejnavn-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.home">-->
     <!--</md-input-container>-->
 
+    <!--<h3>Idea 2 - Icons on buttons with tooltip</h3>-->
+
+    <!--<div layout layout-sm="column">-->
     <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="city">-->
-            <!--<i class="mdi mdi-map-marker" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--By-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.city">-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="name">-->
+    <!--<i class="mdi mdi-account" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--Kunde navn-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.name">-->
+    <!--</md-input-container>-->
+    <!--</div>-->
+
+    <!--<div layout layout-sm="column">-->
+    <!--<md-input-container>-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="home">-->
+    <!--<i class="mdi mdi-home" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--Vejnavn-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.home">-->
     <!--</md-input-container>-->
 
     <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="postalCode">-->
-            <!--<i class="mdi mdi-city" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--Postnummer-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.postalCode">-->
-    <!--</md-input-container>-->
-<!--</div>-->
-
-<!--<div layout layout-sm="column">-->
-    <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="phone">-->
-            <!--<i class="mdi mdi-phone" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--Telefonnummer-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.phone">-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="city">-->
+    <!--<i class="mdi mdi-map-marker" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--By-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.city">-->
     <!--</md-input-container>-->
 
     <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="cellphone">-->
-            <!--<i class="mdi mdi-cellphone-android" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--Mobilnummmer-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.mobile">-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="postalCode">-->
+    <!--<i class="mdi mdi-city" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--Postnummer-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.postalCode">-->
+    <!--</md-input-container>-->
+    <!--</div>-->
+
+    <!--<div layout layout-sm="column">-->
+    <!--<md-input-container>-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="phone">-->
+    <!--<i class="mdi mdi-phone" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--Telefonnummer-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.phone">-->
     <!--</md-input-container>-->
 
     <!--<md-input-container>-->
-        <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="mail">-->
-            <!--<i class="mdi mdi-at" style="font-size: 30px;"></i>-->
-            <!--<md-tooltip>-->
-                <!--E-mail-->
-            <!--</md-tooltip>-->
-        <!--</md-button>-->
-        <!--<input ng-model="user.mail">-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="cellphone">-->
+    <!--<i class="mdi mdi-cellphone-android" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--Mobilnummmer-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.mobile">-->
     <!--</md-input-container>-->
-<!--</div>-->
 
-<!--<div layout layout-sm="column">-->
     <!--<md-input-container>-->
-        <!--<label>Dato for skade</label>-->
-        <!--<input type="date" ng-model="user.submissionDate">-->
+    <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="mail">-->
+    <!--<i class="mdi mdi-at" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--E-mail-->
+    <!--</md-tooltip>-->
+    <!--</md-button>-->
+    <!--<input ng-model="user.mail">-->
     <!--</md-input-container>-->
-<!--</div>-->
+    <!--</div>-->
 
-<!--<md-input-container>-->
+    <!--<div layout layout-sm="column">-->
+    <!--<md-input-container>-->
+    <!--<label>Dato for skade</label>-->
+    <!--<input type="date" ng-model="user.submissionDate">-->
+    <!--</md-input-container>-->
+    <!--</div>-->
+
+    <!--<md-input-container>-->
     <!--<md-button class="md-icon-button md-primary md-hue-5" aria-label="comment">-->
-        <!--<i class="mdi mdi-comment-plus-outline" style="font-size: 30px;"></i>-->
-        <!--<md-tooltip>-->
-            <!--Beskrivelse af skade-->
-        <!--</md-tooltip>-->
+    <!--<i class="mdi mdi-comment-plus-outline" style="font-size: 30px;"></i>-->
+    <!--<md-tooltip>-->
+    <!--Beskrivelse af skade-->
+    <!--</md-tooltip>-->
     <!--</md-button>-->
     <!--<textarea ng-model="user.biography" columns="1"></textarea>-->
-<!--</md-input-container>-->
-<div>
-    <md-content layout-padding>
-        <form name="userForm">
-            <div layout layout-sm="column">
-                <md-input-container style="width:80%">
-                    <label>Firma</label>
-                    <i class="mdi mdi-home-modern"></i>
-                    <input ng-model="user.company">
-                </md-input-container>
+    <!--</md-input-container>-->
+    <div>
+        <md-content layout-padding>
+            <form name="userForm">
+                <div layout layout-sm="column">
+                    <md-input-container style="width:80%">
+                        <label>Firma</label>
+                        <i class="mdi mdi-home-modern"></i>
+                        <input ng-model="user.company">
+                    </md-input-container>
 
-            </div>
-            <div layout layout-sm="column">
+                </div>
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>Kontaktperson</label>
+                        <i class="mdi mdi-account"></i>
+                        <input ng-model="user.name">
+                    </md-input-container>
+
+                </div>
                 <md-input-container flex>
-                    <label>Kontaktperson</label>
-                    <i class="mdi mdi-account"></i>
-                    <input ng-model="user.name">
+                    <label>Adresse</label>
+                    <i class="mdi mdi-home"></i>
+                    <input ng-model="user.address">
                 </md-input-container>
 
-            </div>
-            <md-input-container flex>
-                <label>Adresse</label>
-                <i class="mdi mdi-home"></i>
-                <input ng-model="user.address">
-            </md-input-container>
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>By</label>
+                        <i class="mdi mdi-map-marker"></i>
+                        <input ng-model="user.city">
+                    </md-input-container>
 
-            <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>Postnummer</label>
+                        <i class="mdi mdi-city"></i>
+                        <input ng-model="user.postalCode">
+                    </md-input-container>
+                </div>
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>Telefon</label>
+                        <i class="mdi mdi-phone"></i>
+                        <input ng-model="user.phone">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label>E-mail</label>
+                        <i class="mdi mdi-at"></i>
+                        <input ng-model="user.mail">
+                    </md-input-container>
+                </div>
+
                 <md-input-container flex>
-                    <label>By</label>
-                    <i class="mdi mdi-map-marker"></i>
-                    <input ng-model="user.city">
+                    <label>Dato for skade</label>
+                    <input type="date" ng-model="user.submissionDate">
                 </md-input-container>
-
                 <md-input-container flex>
-                    <label>Postnummer</label>
-                    <i class="mdi mdi-city"></i>
-                    <input ng-model="user.postalCode">
+                    <label>Beskrivelse af skade</label>
+                    <i class="mdi mdi-comment-plus-outline"></i>
+                    <textarea ng-model="user.biography" columns="1"></textarea>
                 </md-input-container>
-            </div>
-            <div layout layout-sm="column">
-                <md-input-container flex>
-                    <label>Telefon</label>
-                    <i class="mdi mdi-phone"></i>
-                    <input ng-model="user.phone">
-                </md-input-container>
-
-                <md-input-container flex>
-                    <label>E-mail</label>
-                    <i class="mdi mdi-at"></i>
-                    <input ng-model="user.mail">
-                </md-input-container>
-            </div>
-
-            <md-input-container flex>
-                <label>Dato for skade</label>
-                <input type="date" ng-model="user.submissionDate">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Beskrivelse af skade</label>
-                <i class="mdi mdi-comment-plus-outline"></i>
-                <textarea ng-model="user.biography" columns="1"></textarea>
-            </md-input-container>
-        </form>
-    </md-content>
+            </form>
+        </md-content>
+    </div>
 </div>
