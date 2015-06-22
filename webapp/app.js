@@ -6,7 +6,7 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute']).config(functio
 });
 
 app.config(function($routeProvider, $locationProvider) {
-    $routeProvider.otherwise('/welcome')
+    $routeProvider.otherwise('/welcome');
 
     $routeProvider
        .when('/welcome' , {
