@@ -17,6 +17,7 @@
   "dependencies": {
     "angular-material": "~0.9.8",
     "angular-route": "~1.4.0",
-    "mdi": "~1.1.34"
+    "mdi": "~1.1.34",
+    "prism": "~1.0.0"
   }
 }
