@@ -41,6 +41,15 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/tooltip' , {
             templateUrl: 'views/tooltip.html'
+        })
+        .when('/examples' , {
+            templateUrl: 'views/examples.html'
+        })
+        .when('/gettingstarted' , {
+            templateUrl: 'views/gettingstarted.html'
+        })
+        .when('/floatingbut' , {
+            templateUrl: 'views/floatingbut.html'
         });
 
 
