@@ -47,10 +47,11 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/gettingstarted' , {
             templateUrl: 'views/gettingstarted.html'
-        })
-        .when('/floatingbut' , {
-            templateUrl: 'views/floatingbut.html'
         });
+        //.when('/floatingbut' , {
+        //    templateUrl: 'views/floatingbut.html'
+        //})
+
 
 
     $locationProvider.html5Mode({
