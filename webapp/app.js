@@ -47,6 +47,9 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/gettingstarted' , {
             templateUrl: 'views/gettingstarted.html'
+        })
+        .when('/output' , {
+            templateUrl: 'views/output.html'
         });
         //.when('/floatingbut' , {
         //    templateUrl: 'views/floatingbut.html'
