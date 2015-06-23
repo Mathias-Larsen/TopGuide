@@ -1,8 +1,6 @@
 <div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
     <h1>Awesome input fields</h1>
 
-    <p>How to use input fields...</p>
-
     <!--<h3>Idea 1 - Only icons</h3>-->
     <!--<div layout layout-sm="column">-->
     <!--<md-input-container flex>-->
@@ -155,16 +153,16 @@
                         <i class="mdi mdi-home-modern"></i>
                         <input ng-model="user.company">
                     </md-input-container>
-
                 </div>
+
                 <div layout layout-sm="column">
                     <md-input-container flex>
                         <label>Kontaktperson</label>
                         <i class="mdi mdi-account"></i>
                         <input ng-model="user.name">
                     </md-input-container>
-
                 </div>
+
                 <md-input-container flex>
                     <label>Adresse</label>
                     <i class="mdi mdi-home"></i>
@@ -184,6 +182,7 @@
                         <input ng-model="user.postalCode">
                     </md-input-container>
                 </div>
+
                 <div layout layout-sm="column">
                     <md-input-container flex>
                         <label>Telefon</label>
@@ -200,6 +199,7 @@
 
                 <md-input-container flex>
                     <label>Dato for skade</label>
+                    <i class="mdi mdi-calendar"></i>
                     <input type="date" ng-model="user.submissionDate">
                 </md-input-container>
                 <md-input-container flex>
@@ -210,4 +210,24 @@
             </form>
         </md-content>
     </div>
+
+    <h3>Input field: Use this for a normal input field. The text will then be the same form and color.</h3>
+    <xmp>
+        <md-input-container flex>
+            <label>Kontaktperson</label>
+            <i class="mdi mdi-account"></i>
+            <input ng-model="user.name">
+        </md-input-container>
+    </xmp>
+
+    <h3>Date: Use this for, when dates needs to be noted. It has calendar.</h3>
+    <xmp>
+        <md-input-container flex>
+            <label>Dato for skade</label>
+            <i class="mdi mdi-calendar"></i>
+            <input type="date" ng-model="user.submissionDate">
+        </md-input-container>
+    </xmp>
+
+    <h3>To change the length of the field, you can delete "flex" after the container.</h3>
 </div>
