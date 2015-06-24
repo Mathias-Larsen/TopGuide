@@ -1,0 +1,493 @@
+<head>
+
+    <title>Søgeresultater - Beredskabsopgaver</title>
+    <meta charset="UTF-8">
+    <title>Beredskabsopgave</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css">
+
+    <meta name="viewport" content="initial-scale=1"/>
+
+    <!--Ændrer ingen ting-->
+    <!--<style>-->
+    <!--&lt;!&ndash;a.class1 {-->
+    <!--text-decoration: none;-->
+    <!--}-->
+
+    <!--a.class1:link {-->
+    <!--color: #3F51B5;-->
+    <!--border-bottom: 1px solid #FFFFFF;-->
+    <!--}-->
+
+    <!--a.class1:visited {-->
+    <!--color: #E57373;-->
+    <!--border-bottom: 1px solid #FFFFFF;-->
+    <!--}-->
+
+    <!--a.class1:hover {-->
+    <!--color: #303F9F;;-->
+    <!--border-bottom: 1px solid #303F9F;-->
+    <!--}&ndash;&gt;-->
+
+    <!--</style>-->
+</head>
+<body>
+
+<md-content layout-padding ng-app="task">
+
+
+
+    <md-toolbar class="md-tall md-toolbar-tools">
+
+        <h2>
+            <span>Søgeresultater > Beredskabsopgave</span>
+        </h2>
+
+
+
+    <span flex>
+    <div layout="row" layout-align="end center">
+
+        <!--Button should check all checkboxes in the search result-->
+        <md-button class="md-icon-button" aria-label="Check-all">
+            <i class="mdi mdi-checkbox-multiple-marked" style="font-size: 24px;"></i><md-tooltip>Vælg alle</md-tooltip></md-button>
+
+        <!--Warning should be added upon click, if no checkbox is checked SHOULD BE A DIALOG WINDOW-->
+        <md-button class="md-icon-button" aria-label="Reassign">
+            <a href="Reassign.html" target="popup"
+               onclick="window.open(this.href,this.target,'width=800,height=800,left=512,top=100,resizeable=no,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no');return false;">
+
+
+                <!--SHOULD OPEN A DIALOG WINDOW, NOT A NEW WINDOW-->
+                <i class="mdi mdi-account-switch" style="font-size: 24px;"></a href></i><md-tooltip>Omfordel</md-tooltip></md-button>
+
+
+
+        <!--Alert dialog should be added upon click-->
+        <md-button class="md-icon-button" aria-label="Bulk Remove">
+            <i class="mdi mdi-delete"style="font-size: 24px;"></i><md-tooltip>Fjern</md-tooltip></md-button>
+
+
+      	</span>
+
+        </div>
+
+    </md-toolbar>
+
+    <md-content>
+
+        <section>
+            <md-chips>
+                <md-chip><strong>Found: 12</strong></md-chip>
+            </md-chips>
+        </section>
+
+    </md-content>
+
+    <!--SEARCH FIELDS-->
+    <md-card>
+
+        <md-card-content>
+
+            <div layout="row" layout-align="space-between center" layout-margin>
+
+                <!-- Har ingen effekt <div flex="5">-->
+                <!--<div flex flex-order-gt-lg="1">-->
+
+                <!--</div>-->
+                <!--</div>-->
+                <i class="mdi mdi-calendar"></i>
+                <div flex="15">
+                    <div flex flex-order-gt-lg="2">
+
+                        <md-input-container flex>
+                            <label>Dato for skade</label>
+                            <input type="date" ng-model="user.submissionDate">
+                        </md-input-container>
+
+                        <!--md-autocomplete flex
+                           md-no-cache="ctrl.noCache"
+                           md-selected-item="ctrl.selectedItem"
+                           md-search-text="ctrl.searchDato"
+                           md-items="item in ctrl.querySearch(ctrl.searchDato)"
+                           md-item-text="item.display"
+                           md-floating-label="Dato">
+                         <span md-highlight-text="ctrl.searchDato">{{item.display}}</span>
+                       </md-autocomplete-->
+
+                    </div>
+                </div>
+
+                <i class="mdi mdi-archive"></i>
+                <div flex="33">
+                    <div flex flex-order-gt-lg="3">
+                        <md-autocomplete flex
+                                         md-no-cache="ctrl.noCache"
+                                         md-selected-item="ctrl.selectedItem"
+                                         md-search-text="ctrl.searchOpgave"
+                                         md-items="item in ctrl.querySearch(ctrl.searchOpgave)"
+                                         md-item-text="item.display"
+                                         md-floating-label="Opgave">
+                            <span md-highlight-text="ctrl.searchOpgave">{{item.display}}</span>
+                        </md-autocomplete>
+                    </div>
+                </div>
+
+
+                <i class="mdi mdi-folder-account"></i>
+                <div flex="15">
+                    <div flex flex-order-gt-lg="4">
+                        <md-autocomplete flex
+                                         md-no-cache="ctrl.noCache"
+                                         md-selected-item="ctrl.selectedItem"
+                                         md-search-text="ctrl.searchSkadenummer"
+                                         md-items="item in ctrl.querySearch(ctrl.searchSkadenummer)"
+                                         md-item-text="item.display"
+                                         md-floating-label="Skadenummer">
+                            <span md-highlight-text="ctrl.searchSkadenummer">{{item.display}}</span>
+                        </md-autocomplete>
+                    </div>
+                </div>
+
+                <i class="mdi mdi-account-switch"></i>
+                <div flex="20">
+                    <div flex flex-order-gt-lg="5">
+                        <md-autocomplete flex
+                                         md-no-cache="ctrl.noCache"
+                                         md-selected-item="ctrl.selectedItem"
+                                         md-search-text="ctrl.searchTildelt"
+                                         md-items="item in ctrl.querySearch(ctrl.searchTildelt)"
+                                         md-item-text="item.display"
+                                         md-floating-label="Tildelt">
+                            <span md-highlight-text="ctrl.searchTildelt">{{item.display}}</span>
+                        </md-autocomplete>
+                    </div>
+                </div>
+            </div>
+
+            <!--SEARCH RESULTS-->
+
+            <div flex>
+
+                <layout="row" layout-align="center">
+  		<span><div layout="row" layout-margin="20px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb2" aria-label="Checkbox 2"></md-checkbox></div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">13-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+        </span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb3" aria-label="Checkbox 3"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">FNOL Internetanmeldelse, beredskab</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1"></a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb5" aria-label="Checkbox 5"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb6" aria-label="Checkbox 6"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1"></a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb7" aria-label="Checkbox 7"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1"></a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb8" aria-label="Checkbox 8"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb1" aria-label="Checkbox 1"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+
+
+        </md-card-content>
+    </md-card>
+
+
+
+    <!--Back button-->
+    <md-card-footer>
+        <div class="md-actions" layout="row" layout-align="end center">
+            <md-button class="md-raised md-accent">Tilbage</md-button></div>
+    </md-card-footer>
+
+
+    </md-card-content>
+    </md-card>
+
+
+</md-content>

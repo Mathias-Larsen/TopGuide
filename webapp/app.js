@@ -1,7 +1,7 @@
 var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute']).config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('cyan')
-        .accentPalette('deep-purple');
+        .accentPalette('teal');
 
 });
 
@@ -50,6 +50,9 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/output' , {
             templateUrl: 'views/output.html'
+        })
+        .when('/tryout' , {
+            templateUrl: 'views/tryout.html'
         });
         //.when('/floatingbut' , {
         //    templateUrl: 'views/floatingbut.html'
