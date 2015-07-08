@@ -1,12 +1,12 @@
-<head>
-    <title>Søgeresultater - Beredskabsopgaver</title>
-    <meta charset="UTF-8">
-    <title>Beredskabsopgave</title>
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
-    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css">
-    <meta name="viewport" content="initial-scale=1"/>
-</head>
-<body>
+<!--<head>-->
+<!--<title>Søgeresultater - Beredskabsopgaver</title>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>Beredskabsopgave</title>-->
+<!--<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">-->
+<!--<link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css">-->
+<!--<meta name="viewport" content="initial-scale=1"/>-->
+<!--</head>-->
+<!--<body>--> <!--har ingen effekt her-->
 
 <md-content layout-padding ng-app="task">
 
@@ -132,7 +132,7 @@
   		<span><div layout="row" layout-margin="20px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb2" aria-label="Checkbox 2"></md-checkbox></div>
+                <div><md-checkbox ng-model="data.cb1" aria-label="Checkbox 1"></md-checkbox></div>
             </div>
             <div flex="15" flex-order-gt-lg="2">13-05-2020</div>
             <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
@@ -150,7 +150,7 @@
   		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb3" aria-label="Checkbox 3"></md-checkbox>
+                <div><md-checkbox ng-model="data.cb2" aria-label="Checkbox 2"></md-checkbox>
                 </div>
             </div>
             <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
@@ -160,6 +160,8 @@
             <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
 
         </div>
+
+            <!-- Checkbox 3 er sprunget over. Uden grund. Betyder ikke noget.-->
 
   			 <md-divider ng-if="!$last"></md-divider>
   			</span>
@@ -283,7 +285,7 @@
   		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb1" aria-label="Checkbox 1"></md-checkbox>
+                <div><md-checkbox ng-model="data.cb9" aria-label="Checkbox 9"></md-checkbox>
                 </div>
             </div>
             <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
@@ -307,7 +309,7 @@
   		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                <div><md-checkbox ng-model="data.cb10" aria-label="Checkbox 10"></md-checkbox>
                 </div>
             </div>
             <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
@@ -328,38 +330,11 @@
 
 
 
-
                 <layout="row" layout-align="space-between center">
   		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
-                </div>
-            </div>
-            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
-            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
-
-            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
-            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
-
-        </div>
-
-  			<md-divider ng-if="!$last"></md-divider>
-  			</span>
-
-            </div>
-            </div>
-            <div flex>
-
-
-
-
-
-                <layout="row" layout-align="space-between center">
-  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
-
-            <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                <div><md-checkbox ng-model="data.cb11" aria-label="Checkbox 11"></md-checkbox>
                 </div>
             </div>
             <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
@@ -385,7 +360,33 @@
   		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
-                <div><md-checkbox ng-model="data.cb4" aria-label="Checkbox 4"></md-checkbox>
+                <div><md-checkbox ng-model="data.cb12" aria-label="Checkbox 12"></md-checkbox>
+                </div>
+            </div>
+            <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
+            <div flex="33" flex-order-gt-lg="3"><a href="http://google.com" class="class1">Internetanmeldelse, beredskab (Carl Gustav Bernadotte)</a href></div>
+
+            <div flex="15" flex-order-gt-lg="4"><a href="http://google.com" class="class1">908907608</a href></div>
+            <div flex="20" flex-order-gt-lg="5">Privatskade Viby</div>
+
+        </div>
+
+  			<md-divider ng-if="!$last"></md-divider>
+  			</span>
+
+            </div>
+            </div>
+            <div flex>
+
+
+
+
+
+                <layout="row" layout-align="space-between center">
+  		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
+
+            <div flex="5" flex-order-gt-lg="1">
+                <div><md-checkbox ng-model="data.cb13" aria-label="Checkbox 13"></md-checkbox>
                 </div>
             </div>
             <div flex="15" flex-order-gt-lg="2">14-05-2020</div>
