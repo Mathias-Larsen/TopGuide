@@ -1,18 +1,8 @@
 <div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
     <h1>Awesome buttons</h1>
-    <!--<p>Use this when...</p>-->
-    <!--<section layout="row" layout-sm="column" layout-align="left">-->
-    <!--<md-button>{{title1}}</md-button>-->
-    <!--</section>-->
 
-    <!--<xmp>-->
-    <!--<section layout="row" layout-sm="column" layout-align="left">-->
-    <!--<md-button>{{title1}}</md-button>-->
-    <!--</section>-->
-    <!--</xmp>-->
-    <!--<br/>-->
-
-    <p>Use this when...</p>
+    <h4>Raised button</h4>
+    <p>Use this button when...</p>
     <section layout="row" layout-sm="column" layout-align="left">
         <md-button class="md-raised">Button</md-button>
     </section>
@@ -20,11 +10,27 @@
     <div style="width: 500px;">
         <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-raised">Button&lt;/md-button>&lt;/i></code></pre>
     </div>
+    <br>
+    <h4>Icon button</h4>
+    <p>Use this button when...</p>
+    <section layout="row" layout-sm="column" layout-align="left">
+        <md-button class="md-fab md-hue-3">
+            <i class="mdi mdi-help"></i>
+        </md-button>
+    </section>
+
+    <div style="width: 500px;">
+        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-fab md-hue-3">
+            &lt;i class="mdi mdi-tooltip-outline">&lt;/i>
+            &lt;/md-button>&lt;/i></code></pre>
+    </div>
+
 
     <br>
-    <p>Use this when...</p>
+    <h4>Colored button with icon and tooltip</h4>
+    <p>Use this button when...</p>
     <section layout="row" layout-sm="column" layout-align="left">
-        <md-button class="md-fab md-hue-1">
+        <md-button class="md-fab md-hue-3">
             <i class="mdi mdi-tooltip-outline"></i>
             <md-tooltip>
                 Tooltip
@@ -33,7 +39,7 @@
     </section>
 
     <div style="width: 500px;">
-        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-fab md-hue-1">
+        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-fab md-hue-3">
             &lt;i class="mdi mdi-tooltip-outline">&lt;/i>
             &lt;md-tooltip>
             Tooltip
