@@ -22,34 +22,32 @@
         <div ng-controller="AppCtrl">
             <md-content>
                 <section layout="row" layout-sm="column" layout-align="left">
-                    <md-button class="md-raised"><i class="mdi mdi-undo"></i>Fortryd</md-button>
-                    <md-button class="md-raised"><i class="mdi mdi-content-save"></i>Gem</md-button>
+                    <md-button class="md-raised"></i>Fortryd</md-button>
+                    <md-button class="md-raised"></i>Gem</md-button>
                 </section>
             </md-content>
         </div>
     </form>
 </div>
 
-<xmp>
-    <div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
-        <form name="myForm">
-            <md-input-container>
-                <md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
-                    <md-option value="1">One</md-option>
-                    <md-option value="2">Two</md-option>
-                    <md-option value="3">Three</md-option>
-                    <md-option value="4">Four</md-option>
-                    <md-option value="5">Five</md-option>
-                </md-select>
-            </md-input-container>
-            <div ng-controller="AppCtrl">
-                <md-content>
-                    <section layout="row" layout-sm="column" layout-align="left">
-                        <md-button class="md-raised"><i class="mdi mdi-undo"></i>Fortryd</md-button>
-                        <md-button class="md-raised"><i class="mdi mdi-content-save"></i>Gem</md-button>
-                    </section>
-                </md-content>
-            </div>
-        </form>
-    </div>
-</xmp>
+<div style="width: 830px;">
+    <pre><code ng-prism class="language-markup">&lt;form name="myForm">
+             &lt;md-input-container>
+                 &lt;md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
+                     &lt;md-option value="1">One</md-option>
+                     &lt;md-option value="2">Two</md-option>
+                     &lt;md-option value="3">Three</md-option>
+                     &lt;md-option value="4">Four</md-option>
+                     &lt;md-option value="5">Five</md-option>
+                 &lt;/md-select>
+        &lt;/md-input-container>
+        &lt;div ng-controller="AppCtrl">
+             &lt;md-content>
+                 &lt;section layout="row" layout-sm="column" layout-align="left">
+                     &lt;md-button class="md-raised">&lt;/i>Fortryd&lt;/md-button>
+                     &lt;md-button class="md-raised">&lt;/i>Gem&lt;/md-button>
+                 &lt;/section>
+             &lt;/md-content>
+        &lt;/div>
+        &lt;/form></code></pre>
+</div>
