@@ -1,9 +1,10 @@
-<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+<md-content ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
     <h1>Awesome toolbar with buttons</h1>
 
+    <p>Toolbar with 3 buttons:</p>
     <div ng-controller="AppCtrl">
         <md-content>
-            <md-toolbar class="md-tall">
+            <md-toolbar class="md-tall md-toolbar-tools">
                 <div class="md-toolbar-tools">
                     <h2>
                         <span>Toolbar with Icon Buttons</span>
@@ -25,59 +26,30 @@
         </md-content>
     </div>
 
-    <xmp>
-        <div ng-controller="AppCtrl">
-            <md-content>
-                <md-toolbar>
-                    <div class="md-toolbar-tools">
-                        <md-button class="md-icon-button">
-                            <i class="mdi mdi-settings" style="font-size: 20px;"></i>
-                        </md-button>
-                        <h2>
-                            <span>Toolbar with Icon Buttons</span>
-                        </h2>
-                        <span flex></span>
-                        <md-button class="md-icon-button">
-                            <i class="mdi mdi-help" style="font-size: 20px;"></i>
-                        </md-button>
+    <div style="width: 850px;">
+        <pre><code ng-prism class="language-markup">&lt;div ng-controller="AppCtrl">
+            &lt;md-content>
+                &lt;md-toolbar class="md-tall md-toolbar-tools">
+                    &lt;div class="md-toolbar-tools">
+                        &lt;h2>
+                            &lt;span>Toolbar with Icon Buttons&lt;/span>
+                        &lt;/h2>
+                        &lt;span flex>&lt;/span>
+                        &lt;md-button class="md-icon-button">
+                            &lt;i class="mdi mdi-help" style="font-size: 20px;">&lt;/i>
+                        &lt;/md-button>
 
-                        <md-button class="md-icon-button">
-                            <i class="mdi mdi-dots-vertical" style="font-size: 20px;"></i>
-                        </md-button>
-                    </div>
-                </md-toolbar>
-            </md-content>
-        </div>
-    </xmp>
+                        &lt;md-button class="md-icon-button">
+                            &lt;i class="mdi mdi-dots-vertical" style="font-size: 20px;">&lt;/i>
+                        &lt;/md-button>
 
-    <!--TEST NEDEFTER! -->
+                        &lt;md-button class="md-icon-button">
+                            &lt;i class="mdi mdi-settings" style="font-size: 20px;">&lt;/i>
+                        &lt;/md-button>
+                    &lt;/div>
+                &lt;/md-toolbar>
+            &lt;/md-content>
+        &lt;/div></code></pre>
 
-    <md-content layout-padding ng-app="task">
 
-        <md-toolbar class="md-tall md-toolbar-tools">
-
-            <h2>
-                <span>Søgeresultater > Beredskabsopgave</span>
-            </h2>
-
-    <span flex>
-    <div layout="row" layout-align="end center">
-
-        <!--Button: vælg alle-->
-        <md-button class="md-icon-button" aria-label="Check-all">
-            <i class="mdi mdi-checkbox-multiple-marked" style="font-size: 24px;"></i><md-tooltip>Vælg alle</md-tooltip></md-button>
-
-        <!--Button: Omfordel-->
-        <md-button class="md-icon-button" aria-label="Reassign">
-            <a href="Reassign.html" target="popup"
-               onclick="window.open(this.href,this.target,'width=800,height=800,left=512,top=100,resizeable=no,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no');return false;">
-                <i class="mdi mdi-account-switch" style="font-size: 24px;"></a href></i><md-tooltip>Omfordel</md-tooltip></md-button>
-
-        <!--Button: Slet-->
-        <md-button class="md-icon-button" aria-label="Bulk Remove">
-            <i class="mdi mdi-delete"style="font-size: 24px;"></i><md-tooltip>Fjern</md-tooltip></md-button>
-
-    </div>
-    </span>
-    </md-toolbar>
 </div>
