@@ -5,81 +5,49 @@
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css">
     <meta name="viewport" content="initial-scale=1"/>
-
-    <!--Farver: Ændrer ingen ting-->
-    <!--<style>-->
-    <!--&lt;!&ndash;a.class1 {-->
-    <!--text-decoration: none;-->
-    <!--}-->
-
-    <!--a.class1:link {-->
-    <!--color: #3F51B5;-->
-    <!--border-bottom: 1px solid #FFFFFF;-->
-    <!--}-->
-
-    <!--a.class1:visited {-->
-    <!--color: #E57373;-->
-    <!--border-bottom: 1px solid #FFFFFF;-->
-    <!--}-->
-
-    <!--a.class1:hover {-->
-    <!--color: #303F9F;;-->
-    <!--border-bottom: 1px solid #303F9F;-->
-    <!--}&ndash;&gt;-->
-
-    <!--</style>-->
 </head>
 <body>
 
 <md-content layout-padding ng-app="task">
 
+    <div ng-controller="AppCtrl">
+        <md-content>
+            <md-toolbar class="md-tall md-toolbar-tools">
+                <div class="md-toolbar-tools">
+                    <h1>Alle beredskabsopgaver</h1>
+                    <span flex></span>
+                    <md-button class="md-icon-button">
+                        <i class="mdi mdi-checkbox-multiple-marked" style="font-size: 20px;"></i>
+                        <md-tooltip>
+                            Vælg alle
+                        </md-tooltip>
+                    </md-button>
 
+                    <md-button class="md-icon-button">
+                        <i class="mdi mdi-account-switch" style="font-size: 20px;"></i>
+                        <md-tooltip>
+                            Omfordel
+                        </md-tooltip>
+                    </md-button>
 
-    <md-toolbar class="md-tall md-toolbar-tools">
+                    <md-button class="md-icon-button">
+                        <i class="mdi mdi-delete" style="font-size: 20px;"></i>
+                        <md-tooltip>
+                            Fjern
+                        </md-tooltip>
+                    </md-button>
+                </div>
+            </md-toolbar>
+        </md-content>
+    </div>
 
-        <h2>
-            <span>Alle beredskabsopgaver</span>
-        </h2>
-
-
-
-    <span flex>
-    <div layout="row" layout-align="end center">
-
-        <!--Button should check all checkboxes in the search result-->
-        <md-button class="md-icon-button" aria-label="Check-all">
-            <i class="mdi mdi-checkbox-multiple-marked" style="font-size: 24px;"></i><md-tooltip>Vælg alle</md-tooltip></md-button>
-
-        <!--Warning should be added upon click, if no checkbox is checked SHOULD BE A DIALOG WINDOW-->
-        <md-button class="md-icon-button" aria-label="Reassign">
-            <a href="Reassign.html" target="popup"
-               onclick="window.open(this.href,this.target,'width=800,height=800,left=512,top=100,resizeable=no,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no');return false;">
-
-
-                <!--SHOULD OPEN A DIALOG WINDOW, NOT A NEW WINDOW-->
-                <i class="mdi mdi-account-switch" style="font-size: 24px;"></a href></i><md-tooltip>Omfordel</md-tooltip></md-button>
-
-
-
-        <!--Alert dialog should be added upon click-->
-        <md-button class="md-icon-button" aria-label="Bulk Remove">
-            <i class="mdi mdi-delete"style="font-size: 24px;"></i><md-tooltip>Fjern</md-tooltip></md-button>
-
-
-      	</span>
-
-        </div>
-
-    </md-toolbar>
 
     <md-content>
-
         <section>
             <md-chips>
                 <md-chip><strong>Found: 12</strong></md-chip>
             </md-chips>
         </section>
-
     </md-content>
 
     <!--SEARCH FIELDS-->
@@ -89,21 +57,24 @@
         <md-card-content>
 
             <div layout="row" layout-align="space-between center" layout-margin>
-
+                <!--center center sætter ikonerne over teksten. space-between sætter dem til venstre for teksten.-->
                 <!--Søgefelterne med tekst og ikon-->
 
                 <div flex="5">
-                    <div flex flex-order-gt-lg=""></div></div>
+                    <div flex flex-order-gt-lg=""></div>
+                </div>
+                <!--Rykker hele layoutet når der ændres på flex-->
 
                 <i class="mdi mdi-calendar"></i>
                 <div flex="15">
-                    <div flex flex-order-gt-lg="2">
+                    <!--flex her, laver søgefeltet mindre-->
+                    <div flex flex-order-gt-lg="1">
+                        <!--denne flex ændrer ingen ting-->
 
                         <md-input-container flex>
                             <label>Dato for skade</label>
                             <input type="date" ng-model="user.submissionDate">
                         </md-input-container>
-
                     </div>
                 </div>
 
@@ -173,9 +144,9 @@
   			<md-divider ng-if="!$last"></md-divider>
         </span>
 
-            <div flex>
+                <div flex>
 
-                <layout="row" layout-align="space-between center">
+                    <layout="row" layout-align="space-between center">
   		<span><div layout="row" layout-margin="56px" layout-align="space-between center">
 
             <div flex="5" flex-order-gt-lg="1">
@@ -192,7 +163,7 @@
 
   			 <md-divider ng-if="!$last"></md-divider>
   			</span>
-            </div>
+                </div>
             </div>
 
             <div flex>
