@@ -83,44 +83,33 @@
     </md-content>
 
     <!--SEARCH FIELDS-->
+
     <md-card>
 
         <md-card-content>
 
             <div layout="row" layout-align="space-between center" layout-margin>
 
-                <!-- Har ingen effekt <div flex="5">-->
-                <!--<div flex flex-order-gt-lg="1">-->
+                <!--Søgefelterne med tekst og ikon-->
 
-                <!--</div>-->
-                <!--</div>-->
+                <div flex="5">
+                    <div flex flex-order-gt-lg=""></div></div>
+
+                <i class="mdi mdi-calendar"></i>
                 <div flex="15">
                     <div flex flex-order-gt-lg="2">
 
                         <md-input-container flex>
-                            <i class="mdi mdi-calendar"></i>
                             <label>Dato for skade</label>
                             <input type="date" ng-model="user.submissionDate">
                         </md-input-container>
 
-                        <!--md-autocomplete flex
-                           md-no-cache="ctrl.noCache"
-                           md-selected-item="ctrl.selectedItem"
-                           md-search-text="ctrl.searchDato"
-                           md-items="item in ctrl.querySearch(ctrl.searchDato)"
-                           md-item-text="item.display"
-                           md-floating-label="Dato">
-                         <span md-highlight-text="ctrl.searchDato">{{item.display}}</span>
-                       </md-autocomplete-->
-
                     </div>
                 </div>
 
-                <!--Søgefelterne med tekst og ikon-->
-
+                <i class="mdi mdi-archive"></i>
                 <div flex="33">
                     <div flex flex-order-gt-lg="3">
-                        <i class="mdi mdi-archive"></i>
                         <md-autocomplete flex
                                          md-no-cache="ctrl.noCache"
                                          md-selected-item="ctrl.selectedItem"
@@ -133,9 +122,9 @@
                     </div>
                 </div>
 
+                <i class="mdi mdi-folder-account"></i>
                 <div flex="15">
                     <div flex flex-order-gt-lg="4">
-                        <i class="mdi mdi-folder-account"></i>
                         <md-autocomplete flex
                                          md-no-cache="ctrl.noCache"
                                          md-selected-item="ctrl.selectedItem"
@@ -148,9 +137,9 @@
                     </div>
                 </div>
 
+                <i class="mdi mdi-account-switch"></i>
                 <div flex="20">
                     <div flex flex-order-gt-lg="5">
-                        <i class="mdi mdi-account-switch"></i>
                         <md-autocomplete flex
                                          md-no-cache="ctrl.noCache"
                                          md-selected-item="ctrl.selectedItem"
@@ -184,8 +173,6 @@
   			<md-divider ng-if="!$last"></md-divider>
         </span>
 
-            <!--</div>-->
-            <!--</div>-->
             <div flex>
 
                 <layout="row" layout-align="space-between center">
