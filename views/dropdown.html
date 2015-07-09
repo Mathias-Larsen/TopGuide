@@ -1,7 +1,7 @@
 <div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
     <h1>Awesome dropdown menu</h1>
 
-    <!--<div ng-controller="AppCtrl" layout="column" layout-align="left" style="min-height: 300px;">-->
+    <div ng-controller="AppCtrl" layout="column" layout-align="left" style="min-height: 300px;">
     <form name="myForm">
         <md-input-container>
             <md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
@@ -11,14 +11,9 @@
                 <md-option value="4">Four</md-option>
                 <md-option value="5">Five</md-option>
             </md-select>
-            <!--<div class="errors" ng-messages="myForm.myModel.$error" ng-if="myForm.$dirty">-->
-            <!--<div ng-message="required">Required</div>-->
-            <!--</div>-->
         </md-input-container>
-        <!--<div layout="row">-->
-        <!--<md-button ng-click="clearValue()" ng-disabled="!myModel" style="margin-right: 20px;">Fortryd</md-button>-->
-        <!--<md-button ng-click="save()" ng-disabled="myForm.$invalid" class="md-primary" layout layout-align="center end">Gem</md-button>-->
-        <!--</div>-->
+
+
         <div ng-controller="AppCtrl">
             <md-content>
                 <section layout="row" layout-sm="column" layout-align="left">
@@ -28,13 +23,14 @@
             </md-content>
         </div>
     </form>
+    </div>
 </div>
 
 <div style="width: 830px;">
     <pre><code ng-prism class="language-markup">&lt;form name="myForm">
-             &lt;md-input-container>
-                 &lt;md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
-                     &lt;md-option value="1">One</md-option>
+        &lt;md-input-container>
+             &lt;md-select name="myModel" placeholder="Pick" ng-model="myModel" required>
+                 &lt;md-option value="1">One</md-option>
                      &lt;md-option value="2">Two</md-option>
                      &lt;md-option value="3">Three</md-option>
                      &lt;md-option value="4">Four</md-option>
