@@ -1,52 +1,66 @@
 <div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
     <h1>Awesome cards</h1>
 
-    <div ng-controller="AppCtrl">
+    <div ng-controller="AppCtrl" layout layout-sm="column">
         <md-content class="md-padding" style="width: 400px;">
             <md-card>
                 <img ng-src="{{imagePath}}" class="md-card-image">
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
                     <p>
-                        We use cards, because they are more easy to use than whiteframes.
+                        We use cards, because it's more easy to use than whiteframes.
                     </p>
                 </md-card-content>
         </md-content>
 
-        <md-content class="md-padding" style="width: 400px;">
+        <md-content class="md-padding" style="width: 600px;">
             <md-card>
                 <img ng-src="{{imagePath}}" class="md-card-image">
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
                     <p>
-                        We use cards, because they are more easy to use than whiteframes.
-                    </p>
-                </md-card-content>
-        </md-content>
-    </div>
-
-    <div ng-controller="AppCtrl">
-        <md-content class="md-padding" style="width: 400px;">
-            <md-card>
-                <img ng-src="{{imagePath}}" class="md-card-image">
-                <md-card-content>
-                    <h2 class="md-title">Cards</h2>
-                    <p>
-                        We use cards, because they are more easy to use than whiteframes.
-                    </p>
-                </md-card-content>
-        </md-content>
-
-        <md-content class="md-padding" style="width: 400px;">
-            <md-card>
-                <img ng-src="{{imagePath}}" class="md-card-image">
-                <md-card-content>
-                    <h2 class="md-title">Cards</h2>
-                    <p>
-                        We use cards, because they are more easy to use than whiteframes.
+                        We use cards, because it's more easy to use than whiteframes.
                     </p>
                 </md-card-content>
         </md-content>
     </div>
 
+    <div ng-controller="AppCtrl" layout layout-sm="column">
+        <md-content class="md-padding" style="width: 200px;">
+            <md-card>
+                <img ng-src="{{imagePath}}" class="md-card-image">
+                <md-card-content>
+                    <h2 class="md-title">Cards</h2>
+                    <p>
+                        We use cards, because it's more easy to use than whiteframes.
+                    </p>
+                </md-card-content>
+        </md-content>
+
+        <md-content class="md-padding" style="width: 800px;">
+            <md-card>
+                <img ng-src="{{imagePath}}" class="md-card-image">
+                <md-card-content>
+                    <h2 class="md-title">Cards</h2>
+                    <p>
+                        We use cards, because it's more easy to use than whiteframes.
+                    </p>
+                </md-card-content>
+        </md-content>
+    </div>
+
+    <div style="width: 610px;">
+        <pre><code ng-prism class="language-markup">&lt;div ng-controller="AppCtrl">
+            &lt;md-content class="md-padding" style="width: 200px;">
+                 &lt;md-card>
+                      &lt;img ng-src="{{imagePath}}" class="md-card-image">
+                      &lt;md-card-content>
+                      &lt;h2 class="md-title">Cards</h2>
+                      &lt;p>We use cards, because it's more
+                      easy to use than whiteframes.&lt;/p>
+                 &lt;/md-card-content>
+            &lt;/md-content></code></pre>
+    </div>
+
+    <h4>Card structure:</h4>
 </div>
