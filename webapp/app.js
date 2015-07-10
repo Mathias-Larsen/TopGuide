@@ -9,51 +9,55 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise('/welcome');
 
     $routeProvider
-       .when('/welcome' , {
+        .when('/welcome', {
             templateUrl: 'views/welcome.html'
         })
-        .when('/icons' , {
+        .when('/icons', {
             templateUrl: 'views/icons.html'
         })
-        .when('/buttons' , {
+        .when('/buttons', {
             templateUrl: 'views/buttons.html'
         })
-        .when('/inputfields' , {
+        .when('/inputfields', {
             templateUrl: 'views/inputfields.html'
         })
-        .when('/progress' , {
+        .when('/progress', {
             templateUrl: 'views/progress.html'
         })
-        .when('/Toolbar' , {
+        .when('/Toolbar', {
             templateUrl: 'views/Toolbar.html'
         })
-        .when('/links' , {
+        .when('/links', {
             templateUrl: 'views/links.html'
         })
-        .when('/checkbox' , {
+        .when('/checkbox', {
             templateUrl: 'views/checkbox.html'
         })
-        .when('/colors' , {
+        .when('/colors', {
             templateUrl: 'views/colors.html'
         })
-        .when('/dropdown' , {
+        .when('/dropdown', {
             templateUrl: 'views/dropdown.html'
         })
-        .when('/tooltip' , {
+        .when('/tooltip', {
             templateUrl: 'views/tooltip.html'
         })
-        .when('/examples' , {
+        .when('/examples', {
             templateUrl: 'views/examples.html'
         })
-        .when('/gettingstarted' , {
+        .when('/gettingstarted', {
             templateUrl: 'views/gettingstarted.html'
         })
-        .when('/output' , {
+        .when('/output', {
             templateUrl: 'views/output.html'
         })
-        .when('/tryout' , {
+        .when('/tryout', {
             templateUrl: 'views/tryout.html'
-        });
+        })
+        .when('/cards', {
+        templateUrl: 'views/cards.html'
+        })
+        ;
         //.when('/floatingbut' , {
         //    templateUrl: 'views/floatingbut.html'
         //})
