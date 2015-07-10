@@ -3,7 +3,7 @@
 
     <p>Always use raised buttons</p>
     <h4>Raised button</h4>
-    <p>Use this button for activeties. Payment, save, delete...</p>
+    <p>Use this button for activeties. Pay, save, delete, send...</p>
     <section layout="row" layout-sm="column" layout-align="left">
         <md-button class="md-raised">Button</md-button>
     </section>
@@ -14,7 +14,8 @@
 
     <br>
     <h4>Colored button with icon and tooltip</h4>
-    <p>Use this button in toolbars. Use the tooltip so the claimhandler will have no doubt.</p>
+    <p>Use this button in toolbars. Use the tooltip so the claimhandler will have no doubt about what the button means.</p>
+    <p></p>
     <section layout="row" layout-sm="column" layout-align="left">
         <md-button class="md-fab md-hue-3">
             <i class="mdi mdi-tooltip-outline"></i>
@@ -25,12 +26,13 @@
     </section>
 
     <div style="width: 500px;">
-        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-fab md-hue-3">
+        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-icon-button">
             &lt;i class="mdi mdi-tooltip-outline">&lt;/i>
             &lt;md-tooltip>
-            Tooltip
+                Tooltip
             &lt;/md-tooltip>
-            &lt;/md-button>&lt;/i></code></pre>
+        &lt;/md-button>
+        </code></pre>
     </div>
 
 </div>
