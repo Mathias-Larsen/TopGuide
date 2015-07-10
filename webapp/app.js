@@ -57,7 +57,9 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/cards', {
         templateUrl: 'views/cards.html'
         })
-        ;
+        .when('/typo', {
+        templateUrl: 'views/typo.html'
+        });
         //.when('/floatingbut' , {
         //    templateUrl: 'views/floatingbut.html'
         //})
