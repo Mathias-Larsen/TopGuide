@@ -55,14 +55,14 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'views/tryout.html'
         })
         .when('/cards', {
-        templateUrl: 'views/cards.html'
+            templateUrl: 'views/cards.html'
         })
         .when('/typo', {
-        templateUrl: 'views/typo.html'
+            templateUrl: 'views/typo.html'
+        })
+        .when('/heading', {
+            templateUrl: 'views/heading.html'
         });
-        //.when('/floatingbut' , {
-        //    templateUrl: 'views/floatingbut.html'
-        //})
 
 
 
