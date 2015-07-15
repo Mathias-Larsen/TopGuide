@@ -1,84 +1,35 @@
 <md-content ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
     <h1>Toast</h1>
 
-    <!--<div ng-controller="AppCtrl" layout-fill layout="column" class="inset">-->
-    <!--<p>Toast can be dismissed with a swipe, a timer, or a button.</p>-->
-    <!--<div layout="row" layout-sm="column" layout-align="space-around">-->
-    <!--<div style="width:50px"></div>-->
-    <!--<md-button ng-click="showCustomToast()">-->
-    <!--Show Custom-->
-    <!--</md-button>-->
-    <!--<md-button ng-click="showSimpleToast()">-->
-    <!--Show Simple-->
-    <!--</md-button>-->
-    <!--<md-button class="md-raised" ng-click="showActionToast()">-->
-    <!--Show With Action-->
-    <!--</md-button>-->
-    <!--<div style="width:50px"></div>-->
-    <!--</div>-->
+    <i>Toasts are primarily used for system messaging. <br>Toasts do not contain actions and cannot be swiped off screen.</i>
+    <i>They should contain a single line of text directly related to the operation performed. They cannot contain icons.</i>
 
-    <!--<div>-->
-    <!--<md-toast>-->
-    <!--<span flex>Custom toast!</span>-->
-    <!--<md-button ng-click="closeToast()">-->
-    <!--Close-->
-    <!--</md-button>-->
-    <!--</md-toast>-->
-    <!--</div>-->
-    <!--</div>-->
+    <br>
+    <div layout="row" layout-align="left">
+        <md-button md-no-ink class="md-raised" ng-click="openToast()">Send</md-button>
+    </div>
 
-    <!--<div ng-controller="AppCtrl" layout-fill layout="column" class="inset">-->
+    <h3>For js:</h3>
+    <div style="width: 1150px;">
+        <pre><code ng-prism class="mdi-language-markup">app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', function($scope, $mdSidenav, $mdToast, $location){
+            $scope.toggleSidenav = function(menuId) {
+            $mdSidenav(menuId).toggle();
+            };
 
-        <!--<div layout="row" layout-sm="column" layout-align="space-around">-->
-            <!--<div style="width:50px"></div>-->
-            <!--<md-button ng-click="openToast()">Show Custom</md-button>-->
+            $scope.openToast = function($event) {
+            $mdToast.show($mdToast.simple().content('Message sent'));
+            };
 
+            $scope.toggleNavigation = function(siteId) {
+            $location.path('/' + siteId);
+            };</code></pre>
+    </div>
 
-            <!--<div style="width:50px"></div>-->
-        <!--</div>-->
-        <!--&lt;!&ndash;<div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<br/>&ndash;&gt;-->
-            <!--&lt;!&ndash;<b>Toast Position: "bottom right"</b>&ndash;&gt;-->
-            <!--&lt;!&ndash;<br/>&ndash;&gt;-->
-            <!--&lt;!&ndash;<md-checkbox ng-repeat="(name, isSelected) in toastPosition"&ndash;&gt;-->
-                         <!--&lt;!&ndash;ng-model="toastPosition[name]">&ndash;&gt;-->
-                <!--&lt;!&ndash;{{name}}&ndash;&gt;-->
-            <!--&lt;!&ndash;</md-checkbox>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
+    <h3>For MD:</h3>
 
-
-    <!--<div layout="row" layout-align="center center">-->
-        <!--<md-button class="md-raised" ng-click="openToast()">Toast</md-button>-->
-    <!--</div>-->
-
-    <!--<div layout="row" layout-align="center center">-->
-        <!--<md-button class="md-raised" ng-click="openToast()">Hey!</md-button>-->
-    <!--</div>-->
-
-    <!--<div ng-controller="AppCtrl" layout-fill layout="column" class="inset">-->
-        <!--<p>Toast can be dismissed with a swipe, a timer, or a button.</p>-->
-        <!--<div layout="row" layout-sm="column" layout-align="space-around">-->
-            <!--<div style="width:50px"></div>-->
-            <!--<md-button ng-click="showCustomToast()">-->
-                <!--Show Custom-->
-            <!--</md-button>-->
-            <!--<md-button ng-click="showSimpleToast()">-->
-                <!--Show Simple-->
-            <!--</md-button>-->
-            <!--<md-button class="md-raised" ng-click="showActionToast()">-->
-                <!--Show With Action-->
-            <!--</md-button>-->
-            <!--<div style="width:50px"></div>-->
-        <!--</div>-->
-        <!--&lt;!&ndash;<div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<br/>&ndash;&gt;-->
-            <!--<b>Toast Position: "{{getToastPosition()}}"</b>-->
-            <!--<br/>-->
-            <!--<md-checkbox ng-repeat="(name, isSelected) in toastPosition"-->
-                         <!--ng-model="toastPosition[name]">-->
-                <!--{{name}}-->
-            <!--</md-checkbox>-->
-        <!--</div>-->
+    <div style="width: 850px;">
+        <pre><code ng-prism class="mdi-language-markup">&lt;div layout="row" layout-align="left">
+            &lt;md-button md-no-ink class="md-raised" ng-click="openToast()">Send&lt;/md-button>
+        &lt;/div></code></pre>
     </div>
 </md-content>
