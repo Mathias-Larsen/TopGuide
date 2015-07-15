@@ -3,18 +3,19 @@
 
     <p>Always use raised buttons</p>
     <h4>Raised button</h4>
-    <p>Use this button for activeties. Pay, save, delete, send...</p>
+    <p>Use this button for activeties. Pay, save, delete, send... <br>This button is without the "push" effect md-no-ink, because it's better for use on a desktop.</p>
     <section layout="row" layout-sm="column" layout-align="left">
-        <md-button class="md-raised">Button</md-button>
+        <md-button md-no-ink class="md-raised">Button</md-button>
     </section>
 
-    <div style="width: 500px;">
-        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-raised">Button&lt;/md-button>&lt;/i></code></pre>
+    <div style="width: 580px;">
+        <pre><code ng-prism="" class="language-markup">&lt;md-button md-no-ink class="md-raised">Button&lt;/md-button>&lt;/i></code></pre>
     </div>
 
     <br>
     <h4>Colored button with icon and tooltip</h4>
-    <p>Use this button in toolbars. Use the tooltip so the claimhandler will have no doubt about what the button means.</p>
+    <p>Use this button in toolbars. Use the tooltip so the claimhandler will have no doubt about what the button means.<br>This button has the "push" effect, because it should have the
+        same color as the toolbar. Then the user can see <br> that the button has been pushed.</p>
     <p></p>
     <section layout="row" layout-sm="column" layout-align="left">
         <md-button class="md-fab md-hue-3">
