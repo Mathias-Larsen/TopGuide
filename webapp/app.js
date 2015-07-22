@@ -65,9 +65,6 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/toast', {
             templateUrl: 'views/toast.html'
-        })
-        .when('/theme', {
-            templateUrl: 'views/theme.html'
         });
 
 
@@ -92,7 +89,6 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
         $location.path('/' + siteId);
     };
 
-
     //For input fields
     $scope.title1 = 'Button';
     $scope.title4 = 'Warn';
@@ -111,8 +107,6 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
         biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
         postalCode : '94043'
     };
-
-
 }]);
 
 //Chips
@@ -165,5 +159,3 @@ app.directive('ngPrism', [function() {
         }
     }
 }]);
-
-$mdThemingProvider.alwaysWatchTheme(true);
