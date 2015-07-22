@@ -1,9 +1,9 @@
-var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute']).config(function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-        .primaryPalette('cyan')
-        .accentPalette('light-blue');
-
-});
+var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
+    .config(function($mdThemingProvider) {
+        $mdThemingProvider.theme('default')
+            .primaryPalette('cyan')
+            .accentPalette('light-blue');
+    });
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise('/welcome');
@@ -65,6 +65,9 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/toast', {
             templateUrl: 'views/toast.html'
+        })
+        .when('/theme', {
+            templateUrl: 'views/theme.html'
         });
 
 
@@ -162,3 +165,5 @@ app.directive('ngPrism', [function() {
         }
     }
 }]);
+
+$mdThemingProvider.alwaysWatchTheme(true);
