@@ -60,9 +60,6 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/typo', {
             templateUrl: 'views/typo.html'
         })
-        .when('/heading', {
-            templateUrl: 'views/heading.html'
-        })
         .when('/toast', {
             templateUrl: 'views/toast.html'
         });
