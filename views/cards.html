@@ -7,7 +7,6 @@
     <div ng-controller="AppCtrl" layout layout-sm="column">
         <md-content class="md-padding" style="width: 400px;">
             <md-card>
-                <img ng-src="{{imagePath}}" class="md-card-image">
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
                     <p>
@@ -18,7 +17,6 @@
 
         <md-content class="md-padding" style="width: 600px;">
             <md-card>
-                <img ng-src="{{imagePath}}" class="md-card-image">
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
                     <p>
@@ -31,7 +29,6 @@
     <div ng-controller="AppCtrl" layout layout-sm="column">
         <md-content class="md-padding" style="width: 200px;">
             <md-card>
-                <img ng-src="{{imagePath}}" class="md-card-image">
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
                     <p>
@@ -42,7 +39,6 @@
 
         <md-content class="md-padding" style="width: 800px;">
             <md-card>
-                <img ng-src="{{imagePath}}" class="md-card-image">
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
                     <p>
@@ -56,7 +52,6 @@
         <pre><code ng-prism class="language-markup">&lt;div ng-controller="AppCtrl">
             &lt;md-content class="md-padding" style="width: 200px;">
                  &lt;md-card>
-                      &lt;img ng-src="{{imagePath}}" class="md-card-image">
                       &lt;md-card-content>
                       &lt;h2 class="md-title">Cards</h2>
                       &lt;p>We use cards, because it's more
@@ -65,5 +60,33 @@
             &lt;/md-content></code></pre>
     </div>
 
-    <h4>Card structure:</h4>
+    <h2>Headings in cards:</h2>
+
+    <md-content class="md-padding" style="width: 300px;">
+        <md-card>
+            <md-toolbar>
+                <h2 class="md-toolbar-tools">
+                    <span>Heading</span>
+                </h2>
+            </md-toolbar>
+            <md-card-content>
+                <p>
+                    Don't use h1 and headings in the cards. Use only headings.
+                </p>
+            </md-card-content>
+    </md-content>
+
+    <md-content class="md-padding" style="width: 600px;">
+        <md-card>
+            <md-toolbar>
+                <h2 class="md-toolbar-tools">
+                    <span>Heading</span>
+                </h2>
+            </md-toolbar>
+            <md-card-content>
+                <p>
+                    Don't use h1 and headings in the cards. Use only headings.
+                </p>
+            </md-card-content>
+    </md-content>
 </div>
