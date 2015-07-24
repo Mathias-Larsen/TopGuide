@@ -143,7 +143,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
 })();
 //Chips stop
 
-<!--Whiteframes as output fields-->
+// Whiteframes as output fields
 angular.module('whiteframeBasicUsage', ['ngMaterial']);
 
 app.directive('ngPrism', [function() {
