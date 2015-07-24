@@ -1,10 +1,9 @@
-<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+<div ng-controller="AppCtrl" layout="column" layout-margin>
 <h1>Checkbox</h1>
 
 <div ng-controller="AppCtrl" class="md-padding">
-    <!--<fieldset class="standard">-->
     <legend>Checkbox</legend>
-    <div layout="column" layout-wrap>
+    <div>
         <div flex="50">
             <md-checkbox md-no-ink aria-label="Checkbox 1" ng-model="data.cb1" class="md-primary">
                 Checkbox 1
@@ -33,8 +32,7 @@
     </div>
     </fieldset>
 </div>
-
-    <div style="width: 1000px;">
+    <div>
         <pre><code ng-prism class="language-markup">&lt;div ng-controller="AppCtrl" class="md-padding">
             &lt;legend>Checkbox&lt;/legend>
             &lt;div layout="column" layout-wrap>

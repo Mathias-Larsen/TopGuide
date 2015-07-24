@@ -2,10 +2,9 @@
     <h1>Cards</h1>
 
     <p>We use cards, because it's more easy to use than whiteframes.</p>
-    <p>It can be used for groupings of information that needs more separation than what whiteframes or dividers can
-        provide.</p>
+    <p>It can be used for groupings of information that needs more separation than what whiteframes or dividers can provide.</p>
     <div ng-controller="AppCtrl" layout layout-sm="column">
-        <md-content class="md-padding" style="width: 400px;">
+        <md-content class="md-padding cards">
             <md-card>
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
@@ -13,9 +12,10 @@
                         We use cards, because it's more easy to use than whiteframes.
                     </p>
                 </md-card-content>
+            </md-card>
         </md-content>
 
-        <md-content class="md-padding" style="width: 600px;">
+        <md-content class="md-padding cards">
             <md-card>
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
@@ -23,11 +23,12 @@
                         We use cards, because it's more easy to use than whiteframes.
                     </p>
                 </md-card-content>
+            </md-card>
         </md-content>
     </div>
 
     <div ng-controller="AppCtrl" layout layout-sm="column">
-        <md-content class="md-padding" style="width: 200px;">
+        <md-content class="md-padding cards">
             <md-card>
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
@@ -35,9 +36,10 @@
                         We use cards, because it's more easy to use than whiteframes.
                     </p>
                 </md-card-content>
+            </md-card>
         </md-content>
 
-        <md-content class="md-padding" style="width: 800px;">
+        <md-content class="md-padding">
             <md-card>
                 <md-card-content>
                     <h2 class="md-title">Cards</h2>
@@ -45,15 +47,16 @@
                         We use cards, because it's more easy to use than whiteframes.
                     </p>
                 </md-card-content>
+            </md-card>
         </md-content>
     </div>
 
-    <div style="width: 610px;">
+    <div>
         <pre><code ng-prism class="language-markup">&lt;div ng-controller="AppCtrl">
-            &lt;md-content class="md-padding" style="width: 200px;">
+            &lt;md-content class="md-padding">
                  &lt;md-card>
                       &lt;md-card-content>
-                      &lt;h2 class="md-title">Cards</h2>
+                      &lt;h2 class="md-title">Cards&lt;/h2>
                       &lt;p>We use cards, because it's more
                       easy to use than whiteframes.&lt;/p>
                  &lt;/md-card-content>
@@ -62,7 +65,7 @@
 
     <h2>Headings in cards:</h2>
 
-    <md-content class="md-padding" style="width: 300px;">
+    <md-content class="md-padding">
         <md-card>
             <md-toolbar>
                 <h2 class="md-toolbar-tools">
@@ -74,9 +77,10 @@
                     Don't use h1 and headings in the cards. Use only headings.
                 </p>
             </md-card-content>
+        </md-card>
     </md-content>
 
-    <md-content class="md-padding" style="width: 600px;">
+    <md-content class="md-padding">
         <md-card>
             <md-toolbar>
                 <h2 class="md-toolbar-tools">
@@ -88,10 +92,11 @@
                     Don't use h1 and headings in the cards. Use only headings.
                 </p>
             </md-card-content>
+        </md-card>
     </md-content>
 
     <div style="width: 800px";>
-        <pre><code ng-prism class="language-markup">&lt;md-content class="md-padding" style="width: 600px;">
+        <pre><code ng-prism class="language-markup">&lt;md-content class="md-padding">
             &lt;md-card>
                 &lt;md-toolbar>
                     &lt;h2 class="md-toolbar-tools">

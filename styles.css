@@ -4,6 +4,7 @@
 
 .language-markup {
     border-bottom: 100px;
+    float: left;
 }
 
 .icon-title {
@@ -12,7 +13,7 @@
 
 .current {
     background-color: #ffffff;
-    color: #0b97c4;
+    color: #000000;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -20,10 +21,17 @@
 
 /* mouse over link */
 a:hover {
-    color: #000000;
+    color: #0b97c4;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
+.md-padding {
+    width: 50%;
+}
+
+.md-toast-open-bottom {
+    background-color: green;
+}
