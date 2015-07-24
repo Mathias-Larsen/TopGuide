@@ -12,8 +12,18 @@
 
 .current {
     background-color: #ffffff;
-    color: #000000;
+    color: #0b97c4;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 }
+
+/* mouse over link */
+a:hover {
+    color: #000000;
+}
+
+h1 {
+    font-size: 40px;
+}
+
