@@ -70,6 +70,9 @@ app.config(function($routeProvider, $locationProvider) {
         })
         .when('/toast', {
             templateUrl: 'views/toast.html'
+        })
+        .when('/themes', {
+            templateUrl: 'views/dynamicThemes.html'
         });
 
 

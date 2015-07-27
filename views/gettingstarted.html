@@ -2,5 +2,41 @@
     <h1>Getting started with Material Design</h1>
 
     <p>This is a designlibrary with the design for all elements.</p>
-    <p>First you need to get the..</p>
+    <p>First you need to get to get Angular Material Design from bower. This should</p>
+    <div>
+        <pre><code ng-prism class="language-markup">bower install angular-material --save</code></pre>
+    </div>
+
+    <p>Put angular dependencies on the index page</p>
+    <div>
+        <pre><code ng-prism class="language-markup">&lt;script src="bower_components/angular/angular.js">&lt;/script>
+&lt;script src="bower_components/angular-animate/angular-animate.js">&lt;/script>
+&lt;script src="bower_components/angular-aria/angular-aria.js">&lt;/script>
+&lt;script src="bower_components/angular-material/angular-material.js">&lt;/script></code></pre>
+    </div>
+
+    <p>Include stylesheets</p>
+    <div>
+        <pre><code ng-prism class="language-markup">&lt;link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+&lt;link href="bower_components/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/></code></pre>
+    </div>
+
+    <p>Configuring your theme. Now you use multiple crispy themes.</p>
+    <div style="width: 700px;">
+        <pre><code ng-prism class="language-javascript">var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
+    .config(function($mdThemingProvider) {
+        $mdThemingProvider.theme('default')
+            .primaryPalette('cyan')
+            .accentPalette('light-blue');
+        $mdThemingProvider.theme('altTheme')
+            .primaryPalette('red')
+            .accentPalette('yellow');
+        $mdThemingProvider.theme('pinky')
+            .primaryPalette('pink')
+            .accentPalette('purple');
+        $mdThemingProvider.setDefaultTheme('altTheme');
+        $mdThemingProvider.alwaysWatchTheme(true);
+    });</code></pre>
+    </div>
 </div>
