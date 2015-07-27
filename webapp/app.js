@@ -3,6 +3,14 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
         $mdThemingProvider.theme('default')
             .primaryPalette('cyan')
             .accentPalette('light-blue');
+        $mdThemingProvider.theme('altTheme')
+            .primaryPalette('red')
+            .accentPalette('yellow');
+        $mdThemingProvider.theme('thoaiGay')
+            .primaryPalette('pink')
+            .accentPalette('purple');
+        $mdThemingProvider.setDefaultTheme('altTheme');
+        $mdThemingProvider.alwaysWatchTheme(true);
     });
 
 app.config(function($routeProvider, $locationProvider) {
@@ -72,7 +80,6 @@ app.config(function($routeProvider, $locationProvider) {
 });
 
 //Toast function
-
 app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', function($scope, $mdSidenav, $mdToast, $location){
     $scope.toggleSidenav = function(menuId) {
         $mdSidenav(menuId).toggle();
@@ -104,6 +111,8 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
         biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
         postalCode : '94043'
     };
+
+    $scope.dynamicTheme = 'default';
 }]);
 
 //Chips
