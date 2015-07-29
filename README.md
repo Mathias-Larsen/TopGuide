@@ -13,6 +13,6 @@ bower install
 
 Use npm to run a simple http-server
 
-'''
+```
 npm start
-'''
+```
