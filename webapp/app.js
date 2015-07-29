@@ -6,12 +6,40 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
         $mdThemingProvider.theme('altTheme')
             .primaryPalette('red')
             .accentPalette('yellow');
-        $mdThemingProvider.theme('thoaiGay')
-            .primaryPalette('pink')
-            .accentPalette('purple');
+        $mdThemingProvider.theme('green')
+            .primaryPalette('teal')
+            .accentPalette('amber');
+        $mdThemingProvider.definePalette('autumn', {
+            '50': '004A61',
+            '100': '004A61',
+            '200': '004A61',
+            '300': '004A61',
+            '400': '004A61',
+            '500': '004A61',
+            '600': '004A61',
+            '700': '004A61',
+            '800': '004A61',
+            '900': '004A61',
+            'A100': '004A61',
+            'A200': '004A61',
+            'A400': '004A61',
+            'A700': '004A61',
+            'contrastDefaultColor': 'light'
+        });
+
+        $mdThemingProvider.theme('autumnLove')
+            .primaryPalette('autumn')
+            .accentPalette('grey');
+
         $mdThemingProvider.setDefaultTheme('altTheme');
         $mdThemingProvider.alwaysWatchTheme(true);
+        // find a way to put a cookie to store the themek
+
     });
+
+app.config(function($mdIconProvider) {
+    $mdIconProvider.fontSet('fa', 'fontawesome');
+});
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise('/welcome');
