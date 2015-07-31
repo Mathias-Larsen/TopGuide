@@ -77,21 +77,21 @@
     <h3>Input field: Use this for a normal input field.</h3>
 
     <div style="width: 410px;">
-        <pre><code ng-prism class="language-markup">&lt;md-input-container flex>
-            &lt;label>Kontaktperson&lt;/label>
-            &lt;i class="mdi mdi-account">&lt;/i>
-            &lt;input ng-model="user.name">
-            &lt;/md-input-container></code></pre>
+        <pre><code ng-prism class="language-markup">&lt;md-input-container class="md-icon-float" flex>
+    &lt;label>Kontaktperson&lt;/label>
+    &lt;md-icon md-font-icon="mdi mdi-account">&lt;/md-icon>
+    &lt;input ng-model="user.name">
+&lt;/md-input-container></code></pre>
     </div>
 
     <h3>Date: Use this for, when dates needs to be noted. It has calendar.</h3>
 
     <div style="width: 600px;">
-        <pre><code ng-prism class="language-markup">&lt;md-input-container flex>
-            &lt;label>Dato for skade&lt;/label>
-            &lt;i class="mdi mdi-calendar">&lt;/i>
-            &lt;input type="date" ng-model="user.submissionDate">
-            &lt;/md-input-container></code></pre>
+        <pre><code ng-prism class="language-markup">&lt;md-input-container class="md-icon-float" flex>
+    &lt;label>Dato for skade&lt;/label>
+    &lt;md-icon md-font-icon="mdi mdi-calendar">&lt;/md-icon>
+    &lt;input type="date" ng-model="user.submissionDate">
+&lt;/md-input-container></code></pre>
     </div>
 
     <h4>To change the length of the field, you can delete "flex" after the container.</h4>

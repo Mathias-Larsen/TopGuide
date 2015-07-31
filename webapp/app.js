@@ -45,7 +45,6 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
             'contrastDefaultColor': 'light'
         });
 
-
         $mdThemingProvider.theme('default')
             .primaryPalette('autumn')
             .accentPalette('autumn1')
@@ -53,14 +52,13 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
 
         $mdThemingProvider.setDefaultTheme('default');
         $mdThemingProvider.alwaysWatchTheme(true);
-        // find a way to put a cookie to store the themek
-
     });
 
 app.config(function($mdIconProvider) {
     $mdIconProvider.fontSet('fa', 'fontawesome');
 });
 
+// Refactor this one out
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise('/welcome');
     $routeProvider
@@ -129,7 +127,6 @@ app.config(function($routeProvider, $locationProvider) {
     });
 });
 
-//Toast function
 app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$cookies', function($scope, $mdSidenav, $mdToast, $location, $cookies){
     $scope.toggleSidenav = function(menuId) {
         $mdSidenav(menuId).toggle();
@@ -143,6 +140,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$co
         $mdToast.show($mdToast.simple().content(message))
     };
 
+    // Method for toggling navigation from the left sidebar
     $scope.toggleNavigation = function(siteId) {
         $location.path('/' + siteId);
     };
@@ -166,8 +164,10 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$co
         postalCode : '94043'
     };
 
+    // used to retrieve the possibly saved theme from the client cookie store
     $scope.dynamicTheme = $cookies.get('colorTheme');
 
+    // set the theme and store the setting in a cookie
     $scope.toggleDynamicTheme = function(theme) {
         $scope.dynamicTheme = theme;
         $cookies.put('colorTheme', theme)
