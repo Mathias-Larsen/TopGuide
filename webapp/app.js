@@ -1,6 +1,6 @@
 var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
     .config(function($mdThemingProvider) {
-        $mdThemingProvider.theme('default')
+        $mdThemingProvider.theme('cyan')
             .primaryPalette('cyan')
             .accentPalette('light-blue');
         $mdThemingProvider.theme('altTheme')
@@ -47,12 +47,11 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
 
 
 
-        $mdThemingProvider.theme('autumnLove')
+        $mdThemingProvider.theme('default')
             .primaryPalette('autumn')
             .accentPalette('autumn1')
             .warnPalette('amber');
 
-        $mdThemingProvider.setDefaultTheme('altTheme');
         $mdThemingProvider.alwaysWatchTheme(true);
         // find a way to put a cookie to store the themek
 
