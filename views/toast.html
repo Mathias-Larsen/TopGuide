@@ -11,26 +11,18 @@
 
 
     <h3>For js:</h3>
-    <div style="width: 1150px;">
-        <pre><code ng-prism class="mdi-language-markup">app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', function($scope, $mdSidenav, $mdToast, $location){
-            $scope.toggleSidenav = function(menuId) {
-            $mdSidenav(menuId).toggle();
-            };
-
-            $scope.openToast = function($event) {
-            $mdToast.show($mdToast.simple().content('Message sent'));
-            };
-
-            $scope.toggleNavigation = function(siteId) {
-            $location.path('/' + siteId);
-            };</code></pre>
+    <div style="width: 750px;">
+        <pre><code ng-prism class="mdi-language-javascript">app.controller('AppCtrl', ['$scope', '$mdToast', function($scope, $mdToast){
+    $scope.openToast = function($event) {
+        $mdToast.show($mdToast.simple().content('Message sent'));
+};</code></pre>
     </div>
 
     <h3>For MD:</h3>
 
     <div style="width: 850px;">
         <pre><code ng-prism class="mdi-language-markup">&lt;div layout="row" layout-align="left">
-            &lt;md-button md-no-ink class="md-raised" ng-click="openToast()">Send&lt;/md-button>
-        &lt;/div></code></pre>
+    &lt;md-button md-no-ink class="md-raised" ng-click="openToast()">Send&lt;/md-button>
+&lt;/div></code></pre>
     </div>
 </md-content>

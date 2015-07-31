@@ -27,9 +27,30 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
             'contrastDefaultColor': 'light'
         });
 
+        $mdThemingProvider.definePalette('autumn1', {
+            '50': '008789',
+            '100': '008789',
+            '200': '008789',
+            '300': '008789',
+            '400': '008789',
+            '500': '008789',
+            '600': '008789',
+            '700': '008789',
+            '800': '008789',
+            '900': '008789',
+            'A100': '008789',
+            'A200': '008789',
+            'A400': '008789',
+            'A700': '008789',
+            'contrastDefaultColor': 'light'
+        });
+
+
+
         $mdThemingProvider.theme('autumnLove')
             .primaryPalette('autumn')
-            .accentPalette('grey');
+            .accentPalette('autumn1')
+            .warnPalette('amber');
 
         $mdThemingProvider.setDefaultTheme('altTheme');
         $mdThemingProvider.alwaysWatchTheme(true);
@@ -118,6 +139,10 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
 
     $scope.openToast = function($event) {
         $mdToast.show($mdToast.simple().content('Message sent'));
+    };
+
+    $scope.openRoastToast = function($event, message) {
+        $mdToast.show($mdToast.simple().content(message))
     };
 
     $scope.toggleNavigation = function(siteId) {

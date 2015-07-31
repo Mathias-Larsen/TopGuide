@@ -11,24 +11,24 @@
             <form name="userForm">
 
                 <div layout layout-sm="column">
-                    <md-input-container flex>
+                    <md-input-container class="md-icon-float" flex>
                         <label>Firma</label>
-                        <i class="mdi mdi-home-modern"></i>
+                        <md-icon md-font-icon="mdi mdi-home-modern"></md-icon>
                         <input ng-model="user.company">
                     </md-input-container>
                 </div>
 
                 <div layout layout-sm="column">
-                    <md-input-container flex>
+                    <md-input-container class="md-icon-float" flex>
                         <label>Kontaktperson</label>
-                        <i class="mdi mdi-account"></i>
+                        <md-icon md-font-icon="mdi mdi-account"></md-icon>
                         <input ng-model="user.name">
                     </md-input-container>
                 </div>
 
-                <md-input-container flex>
+                <md-input-container class="md-icon-float" flex>
                     <label>Adresse</label>
-                    <i class="mdi mdi-home"></i>
+                    <md-icon md-font-icon="mdi mdi-home"></md-icon>
                     <input ng-model="user.address">
                 </md-input-container>
 
@@ -36,6 +36,7 @@
                     <md-input-container flex>
                         <label>By</label>
                         <i class="mdi mdi-map-marker"></i>
+                        <md-icon
                         <input ng-model="user.city">
                     </md-input-container>
 
