@@ -33,43 +33,42 @@
                 </md-input-container>
 
                 <div layout layout-sm="column">
-                    <md-input-container flex>
+                    <md-input-container class="md-icon-float" flex>
                         <label>By</label>
-                        <i class="mdi mdi-map-marker"></i>
-                        <md-icon
+                        <md-icon md-font-icon="mdi mdi-map-marker"></md-icon>
                         <input ng-model="user.city">
                     </md-input-container>
 
-                    <md-input-container flex>
+                    <md-input-container class="md-icon-float" flex>
                         <label>Postnummer</label>
-                        <i class="mdi mdi-city"></i>
+                        <md-icon md-font-icon="mdi mdi-city"></md-icon>
                         <input ng-model="user.postalCode">
                     </md-input-container>
                 </div>
 
                 <div layout layout-sm="column">
-                    <md-input-container flex>
+                    <md-input-container class="md-icon-float" flex>
                         <label>Telefon</label>
-                        <i class="mdi mdi-phone"></i>
+                        <md-icon md-font-icon="mdi mdi-phone"></md-icon>
                         <input ng-model="user.phone">
                     </md-input-container>
 
-                    <md-input-container flex>
+                    <md-input-container class="md-icon-float" flex>
                         <label>E-mail</label>
-                        <i class="mdi mdi-at"></i>
+                        <md-icon md-font-icon="mdi mdi-at"></md-icon>
                         <input ng-model="user.mail">
                     </md-input-container>
                 </div>
 
-                <md-input-container flex>
+                <md-input-container class="md-icon-float" flex>
                     <label>Dato for skade</label>
-                    <i class="mdi mdi-calendar"></i>
+                    <md-icon md-font-icon="mdi mdi-calendar"></md-icon>
                     <input type="date" ng-model="user.submissionDate">
                 </md-input-container>
-                <md-input-container flex>
+                <md-input-container class="md-icon-float" flex>
                     <label>Beskrivelse af skade</label>
-                    <i class="mdi mdi-comment-plus-outline"></i>
-                    <textarea ng-model="user.biography" columns="1"></textarea>
+                    <md-icon md-font-icon="mdi mdi-comment-plus-outline"></md-icon>
+                    <input aria-label="biography" type="text" ng-model="user.biography">
                 </md-input-container>
             </form>
         </md-content>
