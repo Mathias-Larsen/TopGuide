@@ -46,7 +46,6 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
         });
 
 
-
         $mdThemingProvider.theme('default')
             .primaryPalette('autumn')
             .accentPalette('autumn1')
