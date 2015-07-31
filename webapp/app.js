@@ -4,11 +4,11 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
             .primaryPalette('cyan')
             .accentPalette('light-blue');
         $mdThemingProvider.theme('altTheme')
-            .primaryPalette('red')
-            .accentPalette('yellow');
+            .primaryPalette('deep-purple')
+            .accentPalette('purple');
         $mdThemingProvider.theme('green')
             .primaryPalette('teal')
-            .accentPalette('amber');
+            .accentPalette('blue-grey');
         $mdThemingProvider.definePalette('autumn', {
             '50': '004A61',
             '100': '004A61',
@@ -28,23 +28,22 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
         });
 
         $mdThemingProvider.definePalette('autumn1', {
-            '50': '008789',
-            '100': '008789',
-            '200': '008789',
-            '300': '008789',
-            '400': '008789',
-            '500': '008789',
-            '600': '008789',
-            '700': '008789',
-            '800': '008789',
-            '900': '008789',
-            'A100': '008789',
-            'A200': '008789',
-            'A400': '008789',
-            'A700': '008789',
+            '50': 'B0B9E8',
+            '100': 'B0B9E8',
+            '200': 'B0B9E8',
+            '300': 'B0B9E8',
+            '400': 'B0B9E8',
+            '500': 'B0B9E8',
+            '600': 'B0B9E8',
+            '700': 'B0B9E8',
+            '800': 'B0B9E8',
+            '900': 'B0B9E8',
+            'A100': 'B0B9E8',
+            'A200': 'B0B9E8',
+            'A400': 'B0B9E8',
+            'A700': 'B0B9E8',
             'contrastDefaultColor': 'light'
         });
-
 
 
         $mdThemingProvider.theme('default')
