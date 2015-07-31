@@ -15,8 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular-material": "~0.9.8",
-    "angular-route": "~1.4.0",
+    "angular": "~1.4.3",
+    "angular-material": "~0.10.0",
+    "angular-route": "~1.4.3",
+    "angular-cookies": "~1.4.3",
     "mdi": "~1.1.34",
     "prism": "~1.0.0"
   }

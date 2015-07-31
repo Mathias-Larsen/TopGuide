@@ -1,4 +1,4 @@
-var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
+var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
     .config(function($mdThemingProvider) {
         $mdThemingProvider.theme('cyan')
             .primaryPalette('cyan')
@@ -52,6 +52,7 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute'])
             .accentPalette('autumn1')
             .warnPalette('amber');
 
+        $mdThemingProvider.setDefaultTheme('default');
         $mdThemingProvider.alwaysWatchTheme(true);
         // find a way to put a cookie to store the themek
 
@@ -63,7 +64,6 @@ app.config(function($mdIconProvider) {
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise('/welcome');
-
     $routeProvider
         .when('/welcome', {
             templateUrl: 'views/welcome.html'
@@ -131,7 +131,7 @@ app.config(function($routeProvider, $locationProvider) {
 });
 
 //Toast function
-app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', function($scope, $mdSidenav, $mdToast, $location){
+app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$cookies', function($scope, $mdSidenav, $mdToast, $location, $cookies){
     $scope.toggleSidenav = function(menuId) {
         $mdSidenav(menuId).toggle();
     };
@@ -167,7 +167,12 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', func
         postalCode : '94043'
     };
 
-    $scope.dynamicTheme = 'default';
+    $scope.dynamicTheme = $cookies.get('colorTheme');
+
+    $scope.toggleDynamicTheme = function(theme) {
+        $scope.dynamicTheme = theme;
+        $cookies.put('colorTheme', theme)
+    };
 }]);
 
 //Chips
