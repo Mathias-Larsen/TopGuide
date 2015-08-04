@@ -86,9 +86,6 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/checkbox', {
             templateUrl: 'views/checkbox.html'
         })
-        .when('/colors', {
-            templateUrl: 'views/colors.html'
-        })
         .when('/dropdown', {
             templateUrl: 'views/dropdown.html'
         })
