@@ -175,35 +175,10 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$co
 (function () {
     'use strict';
     angular
-        .module('chipsDemo', ['ngMaterial'])
-        .controller('BasicDemoCtrl', DemoCtrl);
+        .module('staticChipsDemo', ['ngMaterial'])
+        .controller('DemoCtrl', DemoCtrl);
     function DemoCtrl ($timeout, $q) {
-        var self = this;
-        self.readonly = false;
-        // Lists of fruit names and Vegetable objects
-        self.fruitNames = ['Apple', 'Banana', 'Orange'];
-        self.roFruitNames = angular.copy(self.fruitNames);
-        self.tags = [];
-        self.vegObjs = [
-            {
-                'name' : 'Broccoli',
-                'type' : 'Brassica'
-            },
-            {
-                'name' : 'Cabbage',
-                'type' : 'Brassica'
-            },
-            {
-                'name' : 'Carrot',
-                'type' : 'Umbelliferous'
-            }
-        ];
-        self.newVeg = function(chip) {
-            return {
-                name: chip,
-                type: 'unknown'
-            };
-        };
+        this.chipText = 'Football';
     }
 })();
 //Chips stop
