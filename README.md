@@ -1,6 +1,6 @@
 # TopGuide
 
-sup
+sup. This is cool
 
 ### How to get started
 
