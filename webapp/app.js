@@ -71,6 +71,9 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/buttons', {
             templateUrl: 'views/buttons.html'
         })
+        .when('/colors', {
+            templateUrl: 'views/colors.html'
+        })
         .when('/inputfields', {
             templateUrl: 'views/inputfields.html'
         })
