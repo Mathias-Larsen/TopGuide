@@ -57,7 +57,7 @@ svg {
 
 .line-drawing path {
 	fill: none;
-	stroke: white;
+	stroke: black;
 	stroke-width: 3;
 }
 
