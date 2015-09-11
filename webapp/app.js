@@ -118,6 +118,9 @@ app.config(function ($routeProvider, $locationProvider) {
         })
         .when('/themes', {
             templateUrl: 'views/dynamicThemes.html'
+        })
+        .when('/generelt', {
+        templateUrl: 'views/generelt.html'
         });
 
 
