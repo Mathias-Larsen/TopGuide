@@ -1,0 +1,92 @@
+<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
+
+    <md-content class="md-padding">
+        <md-card>
+            <md-toolbar>
+                <h2 class="md-toolbar-tools">
+                    <span>Skade</span>
+                </h2>
+            </md-toolbar>
+
+            <md-card-content>
+
+                <div>
+                    <md-content layout-padding>
+                        <form name="userForm">
+
+                            <div layout layout-sm="column">
+                                <md-input-container class="md-icon-float" flex>
+                                    <label>Kundenavn</label>
+                                    <md-icon md-font-icon="mdi mdi-account"></md-icon>
+                                    <input ng-model="user.name">
+                                </md-input-container>
+                            </div>
+
+                            <md-input-container class="md-icon-float" flex>
+                                <label>Adresse</label>
+                                <md-icon md-font-icon="mdi mdi-home"></md-icon>
+                                <input ng-model="user.address">
+                            </md-input-container>
+
+                            <div layout layout-sm="column">
+                                <md-input-container class="md-icon-float" flex>
+                                    <label>By</label>
+                                    <md-icon md-font-icon="mdi mdi-map-marker"></md-icon>
+                                    <input ng-model="user.city">
+                                </md-input-container>
+
+                                <md-input-container class="md-icon-float" flex>
+                                    <label>Postnummer</label>
+                                    <md-icon md-font-icon="mdi mdi-city"></md-icon>
+                                    <input ng-model="user.postalCode">
+                                </md-input-container>
+                            </div>
+
+                            <div layout layout-sm="column">
+                                <md-input-container class="md-icon-float" flex>
+                                    <label>Telefon</label>
+                                    <md-icon md-font-icon="mdi mdi-phone"></md-icon>
+                                    <input ng-model="user.phone">
+                                </md-input-container>
+
+                                <md-input-container class="md-icon-float" flex>
+                                    <label>E-mail</label>
+                                    <md-icon md-font-icon="mdi mdi-at"></md-icon>
+                                    <input ng-model="user.mail">
+                                </md-input-container>
+                            </div>
+
+                            <md-input-container class="md-icon-float" flex>
+                                <label>Dato for skade</label>
+                                <md-icon md-font-icon="mdi mdi-calendar"></md-icon>
+                                <input type="date" ng-model="user.submissionDate">
+                            </md-input-container>
+                        </form>
+                    </md-content>
+                </div>
+
+                <md-button class="md-fab md-hue-3" layout="right">
+                    <i class="mdi mdi-tooltip-outline"></i>
+                </md-button>
+            </md-card-content>
+        </md-card>
+    </md-content>
+
+    <md-content class="md-padding">
+        <md-card>
+            <md-toolbar>
+                <h2 class="md-toolbar-tools">
+                    <span>Beskrivelse af skade</span>
+                </h2>
+            </md-toolbar>
+            <md-card-content>
+
+                <md-input-container class="md-icon-float" flex>
+                    <label>Beskrivelse af skade</label>
+                    <md-icon md-font-icon="mdi mdi-pin"></md-icon>
+                    <input aria-label="biography" type="text" ng-model="user.biography">
+                </md-input-container>
+
+            </md-card-content>
+    </md-content>
+</div>

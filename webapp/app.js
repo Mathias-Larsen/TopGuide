@@ -4,8 +4,8 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
             .primaryPalette('cyan')
             .accentPalette('light-blue');
         $mdThemingProvider.theme('altTheme')
-            .primaryPalette('deep-purple')
-            .accentPalette('purple');
+            .primaryPalette('indigo')
+            .accentPalette('deep-purple');
         $mdThemingProvider.theme('green')
             .primaryPalette('teal')
             .accentPalette('blue-grey');
@@ -50,8 +50,88 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
             .accentPalette('autumn1')
             .warnPalette('amber');
 
+        $mdThemingProvider.theme('uce')
+            .primaryPalette('toolbarcolor')
+            .accentPalette('buttonscolor')
+            //.warnPalette('buttonscolor')
+            .backgroundPalette('backgroundcolor');
+
         $mdThemingProvider.setDefaultTheme('default');
         $mdThemingProvider.alwaysWatchTheme(true);
+
+        //prøvepalette
+        $mdThemingProvider.definePalette('toolbarcolor', {
+            '50': '004A61',
+            '100': '004A61',
+            '200': '004A61',
+            '300': '004A61',
+            '400': '004A61',
+            '500': '004A61',
+            '600': '004A61',
+            '700': '004A61',
+            '800': '004A61',
+            '900': '004A61',
+            'A100': '004A61',
+            'A200': '004A61',
+            'A400': '004A61',
+            'A700': '004A61',
+            'hue-1': '004A61',
+            'contrastDefaultColor': 'light'
+        });
+
+        $mdThemingProvider.definePalette('headingcolor', {
+                '50': 'EEEEEE',
+                '100': 'EEEEEE',
+                '200': 'EEEEEE',
+                '300': 'EEEEEE',
+                '400': 'EEEEEE',
+                '500': 'EEEEEE',
+                '600': 'EEEEEE',
+                '700': 'EEEEEE',
+                '800': 'EEEEEE',
+                '900': 'EEEEEE',
+                'A100': 'EEEEEE',
+                'A200': 'EEEEEE',
+                'A400': 'EEEEEE',
+                'A700': 'EEEEEE',
+                'contrastDefaultColor': 'dark'
+        });
+
+        $mdThemingProvider.definePalette('buttonscolor', {
+            '50': 'FFAB00',
+            '100': 'FFAB00',
+            '200': 'FFAB00',
+            '300': 'FFAB00',
+            '400': 'FFAB00',
+            '500': 'FFAB00',
+            '600': 'FFAB00',
+            '700': 'FFAB00',
+            '800': 'FFAB00',
+            '900': 'FFAB00',
+            'A100': 'FFAB00',
+            'A200': 'FFAB00',
+            'A400': 'FFAB00',
+            'A700': 'FFAB00',
+            'contrastDefaultColor': 'dark'
+        });
+
+        $mdThemingProvider.definePalette('backgroundcolor', {
+            '50': 'FEFFFF',
+            '100': 'FEFFFF',
+            '200': 'FEFFFF',
+            '300': 'FEFFFF',
+            '400': 'FEFFFF',
+            '500': 'FEFFFF',
+            '600': 'FEFFFF',
+            '700': 'FEFFFF',
+            '800': 'FEFFFF',
+            '900': 'FEFFFF',
+            'A100': 'FEFFFF',
+            'A200': 'FEFFFF',
+            'A400': 'FEFFFF',
+            'A700': 'FEFFFF',
+            'contrastDefaultColor': 'dark'
+        });
     });
 
 app.config(function ($mdIconProvider) {
@@ -121,6 +201,9 @@ app.config(function ($routeProvider, $locationProvider) {
         })
         .when('/generelt', {
         templateUrl: 'views/generelt.html'
+        })
+        .when('/LIGHTFNOL', {
+            templateUrl: 'views/LIGHTFNOL.html'
         });
 
 
@@ -163,7 +246,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$co
         address: '1600 Amphitheatre Pkwy',
         city: 'Mountain View',
         state: 'CA',
-        biography: 'Loves kittens, snowboarding, and can type at 130 WPM.\n\nAnd rumor has it she bouldered up Castle Craig!',
+        biography: '',
         postalCode: '94043'
     };
 
