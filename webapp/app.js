@@ -5,10 +5,10 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
             .accentPalette('light-blue');
         $mdThemingProvider.theme('altTheme')
             .primaryPalette('indigo')
-            .accentPalette('deep-purple');
+            .accentPalette('purple');
         $mdThemingProvider.theme('green')
-            .primaryPalette('teal')
-            .accentPalette('blue-grey');
+            .primaryPalette('autumn')
+            .accentPalette('blue');
         $mdThemingProvider.definePalette('autumn', {
             '50': '004A61',
             '100': '004A61',
