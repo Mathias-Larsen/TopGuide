@@ -98,20 +98,20 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
         });
 
         $mdThemingProvider.definePalette('buttonscolor', {
-            '50': 'FFAB00',
-            '100': 'FFAB00',
-            '200': 'FFAB00',
-            '300': 'FFAB00',
-            '400': 'FFAB00',
-            '500': 'FFAB00',
-            '600': 'FFAB00',
-            '700': 'FFAB00',
-            '800': 'FFAB00',
-            '900': 'FFAB00',
-            'A100': 'FFAB00',
-            'A200': 'FFAB00',
-            'A400': 'FFAB00',
-            'A700': 'FFAB00',
+            '50': 'AA16ED',
+            '100': 'AA16ED',
+            '200': 'AA16ED',
+            '300': 'AA16ED',
+            '400': 'AA16ED',
+            '500': 'AA16ED',
+            '600': 'AA16ED',
+            '700': 'AA16ED',
+            '800': 'AA16ED',
+            '900': 'AA16ED',
+            'A100': 'AA16ED',
+            'A200': 'AA16ED',
+            'A400': 'AA16ED',
+            'A700': 'AA16ED',
             'contrastDefaultColor': 'dark'
         });
 
