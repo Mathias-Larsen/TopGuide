@@ -1,62 +1,13 @@
 var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
     .config(function ($mdThemingProvider) {
-        $mdThemingProvider.theme('cyan')
-            .primaryPalette('cyan')
-            .accentPalette('light-blue');
-        $mdThemingProvider.theme('altTheme')
-            .primaryPalette('indigo')
-            .accentPalette('purple');
-        $mdThemingProvider.theme('green')
-            .primaryPalette('autumn')
-            .accentPalette('blue');
-        $mdThemingProvider.definePalette('autumn', {
-            '50': '004A61',
-            '100': '004A61',
-            '200': '004A61',
-            '300': '004A61',
-            '400': '004A61',
-            '500': '004A61',
-            '600': '004A61',
-            '700': '004A61',
-            '800': '004A61',
-            '900': '004A61',
-            'A100': '004A61',
-            'A200': '004A61',
-            'A400': '004A61',
-            'A700': '004A61',
-            'contrastDefaultColor': 'light'
-        });
 
-        $mdThemingProvider.definePalette('autumn1', {
-            '50': '043C53',
-            '100': '043C53',
-            '200': '043C53',
-            '300': '043C53',
-            '400': '043C53',
-            '500': '043C53',
-            '600': '043C53',
-            '700': '043C53',
-            '800': '043C53',
-            '900': '043C53',
-            'A100': '043C53',
-            'A200': '043C53',
-            'A400': '043C53',
-            'A700': '043C53',
-            'contrastDefaultColor': 'light'
-        });
-
-        $mdThemingProvider.theme('default')
-            .primaryPalette('autumn')
-            .accentPalette('autumn1')
-            .warnPalette('amber');
 
         $mdThemingProvider.theme('uce')
             .primaryPalette('toolbarcolor')
             .accentPalette('buttonscolor')
             //.warnPalette('buttonscolor')
-            .backgroundPalette('backgroundcolor');
 
-        $mdThemingProvider.setDefaultTheme('default');
+        $mdThemingProvider.setDefaultTheme('uce');
         $mdThemingProvider.alwaysWatchTheme(true);
 
         //prøvepalette
@@ -77,24 +28,6 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
             'A700': '004A61',
             'hue-1': '004A61',
             'contrastDefaultColor': 'light'
-        });
-
-        $mdThemingProvider.definePalette('headingcolor', {
-                '50': 'EEEEEE',
-                '100': 'EEEEEE',
-                '200': 'EEEEEE',
-                '300': 'EEEEEE',
-                '400': 'EEEEEE',
-                '500': 'EEEEEE',
-                '600': 'EEEEEE',
-                '700': 'EEEEEE',
-                '800': 'EEEEEE',
-                '900': 'EEEEEE',
-                'A100': 'EEEEEE',
-                'A200': 'EEEEEE',
-                'A400': 'EEEEEE',
-                'A700': 'EEEEEE',
-                'contrastDefaultColor': 'dark'
         });
 
         $mdThemingProvider.definePalette('buttonscolor', {
@@ -202,8 +135,8 @@ app.config(function ($routeProvider, $locationProvider) {
         .when('/generelt', {
         templateUrl: 'views/generelt.html'
         })
-        .when('/LIGHTFNOL', {
-            templateUrl: 'views/LIGHTFNOL.html'
+        .when('/exampleColors', {
+            templateUrl: 'views/exampleColors.html'
         });
 
 
