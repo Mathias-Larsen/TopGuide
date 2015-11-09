@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/Mathias-Larsen/TopGuide/issues"
   },
-  "homepage": "https://github.com/Mathias-Larsen/TopGuide"
+  "homepage": "https://github.com/Mathias-Larsen/TopGuide",
+  "dependencies": {
+    "shelljs": "^0.5.3"
+  }
 }
