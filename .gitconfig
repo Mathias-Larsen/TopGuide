@@ -1,0 +1,5 @@
+[http]
+	proxy = virproxy.topdanmark.local:8080
+	sslVerify = false
+[https]
+	proxy = virproxy.topdanmark.local:8080
