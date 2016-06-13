@@ -1,100 +1,117 @@
-<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
-    <h1>Input fields</h1>
+<h1>Input Fields</h1>
 
-    <p>Use inputfields for every time the claimhandler needs to type information.</p>
-    <p>Place the icon where it makes sense. If the icon is going to be next to the inputfield, please place it on the left.</p>
-    <p>Don't use tooltips for inputfields. Text, icon and tooltip is to much together.</p>
-    <p>If a date needs to be noted, please look at the bottom of this page for calendarfunction.</p>
+<p>Input fields can be divided into two different domains:</p>
 
-    <div>
-        <md-content layout-padding>
-            <form name="userForm">
+<p>* Forms you fill out and never get back to.</p>
+<p>* Input fields, which you use for information fetching later on.</p>
 
-                <div layout layout-sm="column">
-                    <md-input-container class="md-icon-float" flex>
-                        <label>Firma</label>
-                        <md-icon md-font-icon="mdi mdi-home-modern"></md-icon>
-                        <input ng-model="user.company">
-                    </md-input-container>
-                </div>
+<h2>"Normal" Input Fields</h2>
 
-                <div layout layout-sm="column">
-                    <md-input-container class="md-icon-float" flex>
-                        <label>Kontaktperson</label>
-                        <md-icon md-font-icon="mdi mdi-account"></md-icon>
-                        <input ng-model="user.name">
-                    </md-input-container>
-                </div>
+<p>Use the default Material Design input fields.</p>
 
-                <md-input-container class="md-icon-float" flex>
-                    <label>Adresse</label>
-                    <md-icon md-font-icon="mdi mdi-home"></md-icon>
-                    <input ng-model="user.address">
-                </md-input-container>
+<p>EXAMPLE - TODO</p>
 
-                <div layout layout-sm="column">
-                    <md-input-container class="md-icon-float" flex>
-                        <label>By</label>
-                        <md-icon md-font-icon="mdi mdi-map-marker"></md-icon>
-                        <input ng-model="user.city">
-                    </md-input-container>
+<h2>"Other" Input Field</h2>
 
-                    <md-input-container class="md-icon-float" flex>
-                        <label>Postnummer</label>
-                        <md-icon md-font-icon="mdi mdi-city"></md-icon>
-                        <input ng-model="user.postalCode">
-                    </md-input-container>
-                </div>
+<p>Use the following template:</p>
 
-                <div layout layout-sm="column">
-                    <md-input-container class="md-icon-float" flex>
-                        <label>Telefon</label>
-                        <md-icon md-font-icon="mdi mdi-phone"></md-icon>
-                        <input ng-model="user.phone">
-                    </md-input-container>
+<!--<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">-->
+    <!--<h1>Input fields</h1>-->
 
-                    <md-input-container class="md-icon-float" flex>
-                        <label>E-mail</label>
-                        <md-icon md-font-icon="mdi mdi-at"></md-icon>
-                        <input ng-model="user.mail">
-                    </md-input-container>
-                </div>
+    <!--<p>Use inputfields for every time the claimhandler needs to type information.</p>-->
+    <!--<p>Place the icon where it makes sense. If the icon is going to be next to the inputfield, please place it on the left.</p>-->
+    <!--<p>Don't use tooltips for inputfields. Text, icon and tooltip is to much together.</p>-->
+    <!--<p>If a date needs to be noted, please look at the bottom of this page for calendarfunction.</p>-->
 
-                <md-input-container class="md-icon-float" flex>
-                    <label>Dato for skade</label>
-                    <md-icon md-font-icon="mdi mdi-calendar"></md-icon>
-                    <input type="date" ng-model="user.submissionDate">
-                </md-input-container>
-                <md-input-container class="md-icon-float" flex>
-                    <label>Beskrivelse af skade</label>
-                    <md-icon md-font-icon="mdi mdi-comment-plus-outline"></md-icon>
-                    <input aria-label="biography" type="text" ng-model="user.biography">
-                </md-input-container>
-            </form>
-        </md-content>
-    </div>
+    <!--<div>-->
+        <!--<md-content layout-padding>-->
+            <!--<form name="userForm">-->
 
-    <h3>Input field: Use this for a normal input field.</h3>
+                <!--<div layout layout-sm="column">-->
+                    <!--<md-input-container class="md-icon-float" flex>-->
+                        <!--<label>Firma</label>-->
+                        <!--<md-icon md-font-icon="mdi mdi-home-modern"></md-icon>-->
+                        <!--<input ng-model="user.company">-->
+                    <!--</md-input-container>-->
+                <!--</div>-->
 
-    <div style="width: 410px;">
-        <pre><code ng-prism class="language-markup">&lt;md-input-container class="md-icon-float" flex>
-    &lt;label>Kontaktperson&lt;/label>
-    &lt;md-icon md-font-icon="mdi mdi-account">&lt;/md-icon>
-    &lt;input ng-model="user.name">
-&lt;/md-input-container></code></pre>
-    </div>
+                <!--<div layout layout-sm="column">-->
+                    <!--<md-input-container class="md-icon-float" flex>-->
+                        <!--<label>Kontaktperson</label>-->
+                        <!--<md-icon md-font-icon="mdi mdi-account"></md-icon>-->
+                        <!--<input ng-model="user.name">-->
+                    <!--</md-input-container>-->
+                <!--</div>-->
 
-    <h3>Date: Use this for, when dates needs to be noted. It has calendar.</h3>
+                <!--<md-input-container class="md-icon-float" flex>-->
+                    <!--<label>Adresse</label>-->
+                    <!--<md-icon md-font-icon="mdi mdi-home"></md-icon>-->
+                    <!--<input ng-model="user.address">-->
+                <!--</md-input-container>-->
 
-    <div style="width: 600px;">
-        <pre><code ng-prism class="language-markup">&lt;md-input-container class="md-icon-float" flex>
-    &lt;label>Dato for skade&lt;/label>
-    &lt;md-icon md-font-icon="mdi mdi-calendar">&lt;/md-icon>
-    &lt;input type="date" ng-model="user.submissionDate">
-&lt;/md-input-container></code></pre>
-    </div>
+                <!--<div layout layout-sm="column">-->
+                    <!--<md-input-container class="md-icon-float" flex>-->
+                        <!--<label>By</label>-->
+                        <!--<md-icon md-font-icon="mdi mdi-map-marker"></md-icon>-->
+                        <!--<input ng-model="user.city">-->
+                    <!--</md-input-container>-->
 
-    <h4>To change the length of the field, you can delete "flex" after the container.</h4>
+                    <!--<md-input-container class="md-icon-float" flex>-->
+                        <!--<label>Postnummer</label>-->
+                        <!--<md-icon md-font-icon="mdi mdi-city"></md-icon>-->
+                        <!--<input ng-model="user.postalCode">-->
+                    <!--</md-input-container>-->
+                <!--</div>-->
 
-    <div flex="33"><a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-formatting">Link for Google Material Design</a></div>
-</div>
+                <!--<div layout layout-sm="column">-->
+                    <!--<md-input-container class="md-icon-float" flex>-->
+                        <!--<label>Telefon</label>-->
+                        <!--<md-icon md-font-icon="mdi mdi-phone"></md-icon>-->
+                        <!--<input ng-model="user.phone">-->
+                    <!--</md-input-container>-->
+
+                    <!--<md-input-container class="md-icon-float" flex>-->
+                        <!--<label>E-mail</label>-->
+                        <!--<md-icon md-font-icon="mdi mdi-at"></md-icon>-->
+                        <!--<input ng-model="user.mail">-->
+                    <!--</md-input-container>-->
+                <!--</div>-->
+
+                <!--<md-input-container class="md-icon-float" flex>-->
+                    <!--<label>Dato for skade</label>-->
+                    <!--<md-icon md-font-icon="mdi mdi-calendar"></md-icon>-->
+                    <!--<input type="date" ng-model="user.submissionDate">-->
+                <!--</md-input-container>-->
+                <!--<md-input-container class="md-icon-float" flex>-->
+                    <!--<label>Beskrivelse af skade</label>-->
+                    <!--<md-icon md-font-icon="mdi mdi-comment-plus-outline"></md-icon>-->
+                    <!--<input aria-label="biography" type="text" ng-model="user.biography">-->
+                <!--</md-input-container>-->
+            <!--</form>-->
+        <!--</md-content>-->
+    <!--</div>-->
+
+    <!--<h3>Input field: Use this for a normal input field.</h3>-->
+
+    <!--<div style="width: 410px;">-->
+        <!--<pre><code ng-prism class="language-markup">&lt;md-input-container class="md-icon-float" flex>-->
+    <!--&lt;label>Kontaktperson&lt;/label>-->
+    <!--&lt;md-icon md-font-icon="mdi mdi-account">&lt;/md-icon>-->
+    <!--&lt;input ng-model="user.name">-->
+<!--&lt;/md-input-container></code></pre>-->
+    <!--</div>-->
+
+    <!--<h3>Date: Use this for, when dates needs to be noted. It has calendar.</h3>-->
+
+    <!--<div style="width: 600px;">-->
+        <!--<pre><code ng-prism class="language-markup">&lt;md-input-container class="md-icon-float" flex>-->
+    <!--&lt;label>Dato for skade&lt;/label>-->
+    <!--&lt;md-icon md-font-icon="mdi mdi-calendar">&lt;/md-icon>-->
+    <!--&lt;input type="date" ng-model="user.submissionDate">-->
+<!--&lt;/md-input-container></code></pre>-->
+    <!--</div>-->
+
+    <!--<h4>To change the length of the field, you can delete "flex" after the container.</h4>-->
+
+    <!--<div flex="33"><a href="https://www.google.com/design/spec/components/text-fields.html#text-fields-formatting">Link for Google Material Design</a></div>-->
+<!--</div>-->

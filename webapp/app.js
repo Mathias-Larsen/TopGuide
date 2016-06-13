@@ -3,32 +3,52 @@ var app = angular.module('StarterApp', ['ngMaterial', 'ngRoute', 'ngCookies'])
 
 
         $mdThemingProvider.theme('uce')
-            .primaryPalette('toolbarcolor')
-            .accentPalette('buttonscolor')
+            .primaryPalette('topdanmark')
+            .accentPalette('deep-orange')
             //.warnPalette('buttonscolor')
 
         $mdThemingProvider.setDefaultTheme('uce');
         $mdThemingProvider.alwaysWatchTheme(true);
 
-        //prøvepalette
-        $mdThemingProvider.definePalette('toolbarcolor', {
-            '50': '004A61',
-            '100': '004A61',
-            '200': '004A61',
-            '300': '004A61',
-            '400': '004A61',
-            '500': '004A61',
-            '600': '004A61',
-            '700': '004A61',
-            '800': '004A61',
-            '900': '004A61',
-            'A100': '004A61',
-            'A200': '004A61',
-            'A400': '004A61',
-            'A700': '004A61',
-            'hue-1': '004A61',
+        $mdThemingProvider.definePalette('topdanmark', {
+            '50': '#e5ecef',
+            '100': '#ccdadf',
+            '200': '#99b6bf',
+            '300': '#6692a0',
+            '400': '#326e80',
+            '500': '#004a61',
+            '600': '#003b4d',
+            '700': '#002c3a',
+            '800': '#001d26',
+            '900': '#000e13',
+            'A100': '#e5ecef',
+            'A200': '#ccdadf',
+            'A400': '#326e80',
+            'A700': '#002c3a',
             'contrastDefaultColor': 'light'
         });
+
+        // //prøvepalette
+        // $mdThemingProvider.definePalette('toolbarcolor', {
+        //     '50': '004A61',
+        //     '100': '004A61',
+        //     '200': '004A61',
+        //     '300': '004A61',
+        //     '400': '004A61',
+        //     '500': '004A61',
+        //     '600': '004A61',
+        //     '700': '004A61',
+        //     '800': '004A61',
+        //     '900': '004A61',
+        //     'A100': '004A61',
+        //     'A200': '004A61',
+        //     'A400': '004A61',
+        //     'A700': '004A61',
+        //     'hue-1': '004A61',
+        //     'contrastDefaultColor': 'light'
+        // });
+
+
 
         $mdThemingProvider.definePalette('buttonscolor', {
             '50': 'AA16ED',
@@ -78,11 +98,20 @@ app.config(function ($routeProvider, $locationProvider) {
         .when('/welcome', {
             templateUrl: 'views/welcome.html'
         })
-        .when('/icons', {
-            templateUrl: 'views/icons.html'
+        .when('/theme', {
+            templateUrl: 'views/theme.html'
+        })
+        .when('/navbar', {
+            templateUrl: 'views/navbar.html'
         })
         .when('/buttons', {
             templateUrl: 'views/buttons.html'
+        })
+        .when('/errorhandling', {
+            templateUrl: 'views/errorhandling.html'
+        })
+        .when('/icons', {
+            templateUrl: 'views/icons.html'
         })
         .when('/colors', {
             templateUrl: 'views/colors.html'
@@ -154,6 +183,14 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$mdToast', '$location', '$co
     $scope.openToast = function ($event) {
         $mdToast.show($mdToast.simple().content('Message sent'));
     };
+
+    $scope.openErrorToast = function ($event) {
+        $mdToast.show({
+            position : 'top right',
+            content : "LOL"
+        })
+
+    }
 
     $scope.openRoastToast = function ($event, message) {
         $mdToast.show($mdToast.simple().content(message))

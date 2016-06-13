@@ -1,39 +1,51 @@
-<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">
-    <h1>Buttons</h1>
+<h1>Buttons</h1>
 
-    <p>Always use raised buttons</p>
-    <p>Do not use both text and icon on a button. On raised buttons, only use text.</p>
-    <h4>Raised button</h4>
-    <p>Use this button for activeties. Pay, save, delete, send... <br>This button is without the "push" effect md-no-ink, because it's better for use on a desktop.</p>
-    <section layout="row" layout-sm="column" layout-align="left">
-        <md-button md-no-ink class="md-raised">Button</md-button>
-    </section>
+<p>Buttons should use the following order (notice that the cancel button is on the left and the okay button is on the right).</p>
 
-    <div style="width: 580px;">
-        <pre><code ng-prism="" class="language-markup">&lt;md-button md-no-ink class="md-raised">Button&lt;/md-button></code></pre>
-    </div>
+<md-button md-no-ink class="md-raised">Annuller</md-button><md-button md-no-ink class="md-raised md-primary">Gem</md-button>
 
-    <br>
-    <h4>Button with icon and tooltip</h4>
-    <p>Use this button in toolbars. Use the tooltip so the claimhandler will have no doubt about what the button means.<br>This button has the "push" effect, because it should have the
-        same color as the toolbar. Then the user can see <br> that the button has been pushed.</p>
-    <p></p>
-    <section layout="row" layout-sm="column" layout-align="left">
-        <md-button class="md-fab md-hue-3">
-            <i class="mdi mdi-tooltip-outline"></i>
-            <md-tooltip>
-                Tooltip
-            </md-tooltip>
-        </md-button>
-    </section>
+<h2>Default Button Names</h2>
 
-    <div style="width: 500px;">
-        <pre><code ng-prism="" class="language-markup">&lt;md-button class="md-fab md-hue-3">
-    &lt;i class="mdi mdi-tooltip-outline">&lt;/i>
-    &lt;md-tooltip>Tooltip&lt;/md-tooltip>
-&lt;/md-button>
-        </code></pre>
-    </div>
+<p>Please use these naming conventions when creating buttons.</p>
 
-    <div flex="33"><a href="https://www.google.com/design/spec/components/buttons.html#">Link for Google Material Design</a></div>
-</div>
+<md-button md-no-ink class="md-raised">Annuller</md-button><md-button md-no-ink class="md-raised md-primary">Gem</md-button><md-button md-no-ink class="md-raised md-primary">Send</md-button>
+
+<!--<div ng-controller="AppCtrl" layout="column" layout-margin style="padding:25px;">-->
+    <!--<h1>Buttons</h1>-->
+
+    <!--<p>Always use raised buttons</p>-->
+    <!--<p>Do not use both text and icon on a button. On raised buttons, only use text.</p>-->
+    <!--<h4>Raised button</h4>-->
+    <!--<p>Use this button for activeties. Pay, save, delete, send... <br>This button is without the "push" effect md-no-ink, because it's better for use on a desktop.</p>-->
+    <!--<section layout="row" layout-sm="column" layout-align="left">-->
+        <!--<md-button md-no-ink class="md-raised">Button</md-button>-->
+    <!--</section>-->
+
+    <!--<div style="width: 580px;">-->
+        <!--<pre><code ng-prism="" class="language-markup">&lt;md-button md-no-ink class="md-raised">Button&lt;/md-button></code></pre>-->
+    <!--</div>-->
+
+    <!--<br>-->
+    <!--<h4>Button with icon and tooltip</h4>-->
+    <!--<p>Use this button in toolbars. Use the tooltip so the claimhandler will have no doubt about what the button means.<br>This button has the "push" effect, because it should have the-->
+        <!--same color as the toolbar. Then the user can see <br> that the button has been pushed.</p>-->
+    <!--<p></p>-->
+    <!--<section layout="row" layout-sm="column" layout-align="left">-->
+        <!--<md-button class="md-fab md-hue-3">-->
+            <!--<i class="mdi mdi-tooltip-outline"></i>-->
+            <!--<md-tooltip>-->
+                <!--Tooltip-->
+            <!--</md-tooltip>-->
+        <!--</md-button>-->
+    <!--</section>-->
+
+    <!--<div style="width: 500px;">-->
+        <!--<pre><code ng-prism="" class="language-markup">&lt;md-button class="md-fab md-hue-3">-->
+    <!--&lt;i class="mdi mdi-tooltip-outline">&lt;/i>-->
+    <!--&lt;md-tooltip>Tooltip&lt;/md-tooltip>-->
+<!--&lt;/md-button>-->
+        <!--</code></pre>-->
+    <!--</div>-->
+
+    <!--<div flex="33"><a href="https://www.google.com/design/spec/components/buttons.html#">Link for Google Material Design</a></div>-->
+<!--</div>-->
